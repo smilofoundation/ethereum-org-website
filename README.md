@@ -149,8 +149,7 @@ How updates are made to smilo.foundation
   - e.g. `Add height to sidebar for scroll [Fixes #185]`
   - Read [Closing issues using keywords](https://help.github.com/en/articles/closing-issues-using-keywords) for more information
 - Submit PRs to the `dev` branch
-- Netlify deploys all PRs to a publicly accessible preview URL:
-![Netlify deploy preview](./netlify-deploy-preview.png)
+- Netlify deploys all PRs to a publicly accessible preview 
 - Confirm the Netlify preview deploy looks & functions as expected
 
 ### Review
