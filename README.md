@@ -95,17 +95,8 @@ Decisions about individual PRs, design evolution, and major upgrades to the webs
 
 This team currently includes:
 
-- Anuj Gupta (Smilo Foundation)
-- Amanda Gutterman (ConsenSys)
-- Hudson Jameson (Smilo Foundation Devops)
-- Taeyeon Kim (Smilo Foundation)
-- Jamie Pitts (Smilo Foundation Devops)
-- Sam Richards (Smilo Foundation)
-- Joseph Schweitzer (Smilo Foundation)
-- Josh Stark (L4, ETHGlobal, Smilo Foundation)
-- Charles St. Louis (MakerDAO & Smilo Cat Herders)
-- Evan Van Ness (ConsenSys & Smilo Foundation)
-- Alan Woo (Independent designer & developer)
+- Thomas Modeneis (Smilo Foundation)
+- Patrick Joore (Smilo Foundation)
 
 ## Development
 
