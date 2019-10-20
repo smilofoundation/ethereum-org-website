@@ -2,11 +2,11 @@
 title: Enterprise
 meta:
     - name: description
-      content: Guides, articles, and tools about public and private Ethereum blockchains for enterprise
+      content: Guides, articles, and tools about public and private Smilo blockchains for enterprise
     - property: og:title
-      content: Enterprise Ethereum
+      content: Enterprise Smilo
     - property: og:description
-      content: Guides, articles, and tools about public and private Ethereum blockchains for enterprise
+      content: Guides, articles, and tools about public and private Smilo blockchains for enterprise
 lang: en-US
 sidebar: auto
 sidebarDepth: 0
@@ -14,10 +14,10 @@ sidebarDepth: 0
 
 # Enterprise Resources
 
-<div class="featured">Guides, articles, and tools for delivering both public and private Ethereum blockchains for enterprise.</div>
+<div class="featured">Guides, articles, and tools for delivering both public and private Smilo blockchains for enterprise.</div>
 
-## Why Enterprise Ethereum?
-Why should businesses care about Enterprise Ethereum?
+## Why Enterprise Smilo?
+Why should businesses care about Enterprise Smilo?
 - New business models and value creation opportunities
 - Reduced cost of trust and coordination between business parties
 - Improved business network accountability and operational efficiency
@@ -26,7 +26,7 @@ Why should businesses care about Enterprise Ethereum?
 
 For more in depth information, here are some related articles:
 
-- [5 Reasons Why Enterprise Ethereum Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [5 Reasons Why Enterprise Smilo Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
 - [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY releases zero-knowledge proof blockchain transaction technology to the public domain to advance blockchain privacy standards](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [Introduction to Quorum: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
@@ -34,14 +34,14 @@ For more in depth information, here are some related articles:
 
 ## Organizations
 
-Some collaborative efforts to make Ethereum enterprise friendly have been put together by different organizations:
+Some collaborative efforts to make Smilo enterprise friendly have been put together by different organizations:
 
 - [EEA](https://entethalliance.org/)  
-*The Enterprise Ethereum Alliance is a member-driven standards organization whose charter is to develop open, blockchain specifications that drive harmonization and interoperability for businesses and consumers worldwide. Our global community of members is made up of leaders, adopters, innovators, developers, and businesses who collaborate to create an open, decentralized web for the benefit of everyone.*
+*The Enterprise Smilo Alliance is a member-driven standards organization whose charter is to develop open, blockchain specifications that drive harmonization and interoperability for businesses and consumers worldwide. Our global community of members is made up of leaders, adopters, innovators, developers, and businesses who collaborate to create an open, decentralized web for the benefit of everyone.*
 
 - [Hyperledger Foundation](https://hyperledger.org)  
 *Hyperledger is an open source collaborative effort created to advance cross-industry blockchain technologies. It is a global collaboration, hosted by The Linux Foundation, including leaders in finance, banking, Internet of Things, supply chains, manufacturing and Technology.*
-*The foundation has some projects in it that work with the Ethereum stack:*
+*The foundation has some projects in it that work with the Smilo stack:*
     - [Hyperledger Besu](https://www.hyperledger.org/blog/2019/08/29/announcing-hyperledger-besu)
     - [Hyperledger Burrow](https://www.hyperledger.org/projects/hyperledger-burrow)
 
@@ -49,23 +49,23 @@ Some collaborative efforts to make Ethereum enterprise friendly have been put to
 
 The following projects provide blockchain services for enterprises grade systems:
 
-- [Blockapps](https://blockapps.net/) *implementation of the Enterprise Ethereum protocol, tooling and APIs that form the STRATO platform*
+- [Blockapps](https://blockapps.net/) *implementation of the Enterprise Smilo protocol, tooling and APIs that form the STRATO platform*
 - [Clearmatics](https://www.clearmatics.com/about) *protocols and peer-to-peer platform architecture, blockchain R&D company*
 - [PegaSys Plus](https://pegasys.tech/enterprise/) *offers the same features and functionalities as HF Besu, plus additional enterprise focused benefits*
-- [Quorum](https://www.goquorum.com/) *open source blockchain platform that combines the innovation of the public Ethereum community with enhancements to support enterprise needs*
+- [Quorum](https://www.goquorum.com/) *open source blockchain platform that combines the innovation of the public Smilo community with enhancements to support enterprise needs*
 
 ## Protocol and Infrastructure
 
-- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) *open-source Ethereum client developed under the Apache 2.0 license and written in Java*
-- [Hyperledger Burrow](https://kaleido.io/) *modular blockchain client with a permissioned smart contract interpreter partially developed to the specification of the Ethereum Virtual Machine (EVM)*
-- [Infura](https://infura.io/) *scalable API access to the Ethereum and IPFS networks*
+- [Hyperledger Besu](https://www.hyperledger.org/projects/besu) *open-source Smilo client developed under the Apache 2.0 license and written in Java*
+- [Hyperledger Burrow](https://kaleido.io/) *modular blockchain client with a permissioned smart contract interpreter partially developed to the specification of the Smilo Virtual Machine (EVM)*
+- [Infura](https://infura.io/) *scalable API access to the Smilo and IPFS networks*
 - [Kaleido](https://kaleido.io/) *full-stack platform for building and running cross-cloud, hybrid enterprise ecosystems*
 - [Autonity](https://www.clearmatics.com/about/) *protocol suite that implements p2p protocols and provides client software and infrastructure*
 
 
 ## Enterprise Features
 
-Public and private Ethereum networks might need specific features required by network participants. The following are some of those features:
+Public and private Smilo networks might need specific features required by network participants. The following are some of those features:
 
 ### Permissioning
 
@@ -87,7 +87,7 @@ Public and private Ethereum networks might need specific features required by ne
 
 ### Tooling
 
-- [Alethio](https://aleth.io/) *Ethereum Data Analytics Platform*
+- [Alethio](https://aleth.io/) *Smilo Data Analytics Platform*
 - [Treum](https://treum.io/) *bringing transparency, traceability, and tradability to supply chains, using blockchain technology*
 - [Truffle Suite](https://trufflesuite.com) *blockchain development suite (Truffle, Ganache, Drizzle)*
 
