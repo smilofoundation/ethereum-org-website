@@ -1,5 +1,5 @@
 <h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
-  <p><a href="https://smilo.foundation"><img alt="smilo logo" src="./eth.png" alt="smilo.org" width="125"></a></p>
+  <p><a href="https://smilo.foundation"><img alt="smilo logo" src="./foundation logo.png" alt="smilo.org" width="125"></a></p>
   <p>👋 Welcome to smilo.foundation!</p>
 </h1>
 
