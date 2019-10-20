@@ -17,13 +17,13 @@ If you’re interested in helping to improve [smilo.foundation](https://smilo.fo
 - Rather, its purpose is to direct people to community-built resources
 - Smilo.org will always have minimal native-content
 
-**🛠 2. Smilo.org is a work in progress, because Smilo is a work in progress**
+**🛠 2. Smilo.foundation is a work in progress, because Smilo is a work in progress**
 
 - The site has been re-launched explicitly in an unfinished state
 - We expect it to change over time, including both content and design
 - To accommodate long-term changes, the site has a simple modular structure that will let us add or remove subpages
 
-**🦄 3. Smilo.org is not a typical product website**
+**🦄 3. Smilo.foundation is not a typical product website**
 
 - Smilo.foundation is a representation of our decentralized community, and a starting point for those who want to join it
 - Smilo.foundation should not be a traditional product website like every other blockchain. There is no sales pitch.
@@ -151,9 +151,9 @@ How updates are made to smilo.foundation
 
 ### Submit
 
-- Create a [new issue](https://github.com/smilofoundation/smilo-foundation-website/issues/new)
+- Create a [new issue](https://github.com/smilo.foundation/smilo-foundation-website/issues/new)
   - If you plan to submit a PR to resolve the issue, assign it to yourself
-  - If you begin work on the issue, [label it](https://github.com/smilofoundation/smilo-foundation-website/labels) as `wip`
+  - If you begin work on the issue, [label it](https://github.com/smilo.foundation/smilo-foundation-website/labels) as `wip`
 - In your PR commit message, reference the issue it resolves
   - e.g. `Add height to sidebar for scroll [Fixes #185]`
   - Read [Closing issues using keywords](https://help.github.com/en/articles/closing-issues-using-keywords) for more information
@@ -164,14 +164,14 @@ How updates are made to smilo.foundation
 
 ### Review
 
-- The [website team](https://github.com/smilofoundation/smilo-org-website#-how-are-decisions-about-the-site-made) reviews every PR
-- See [how decisions are made on content changes](https://github.com/smilofoundation/smilo-foundation-website#notes-on-individual-sub-pages)
+- The [website team](https://github.com/smilo.foundation/smilo-org-website#-how-are-decisions-about-the-site-made) reviews every PR
+- See [how decisions are made on content changes](https://github.com/smilo.foundation/smilo-foundation-website#notes-on-individual-sub-pages)
 - Acceptable PRs will be approved & merged into the `dev` branch
 
 ### Deploy
 
 - `master` is continually synced to Netlify and will automatically deploy new commits to etheruem.org
-- The [website team](https://github.com/smilofoundation/smilo-foundation-website#-how-are-decisions-about-the-site-made) will periodically merge `dev` into `master` (typically multiple times per week)
+- The [website team](https://github.com/smilo.foundation/smilo-foundation-website#-how-are-decisions-about-the-site-made) will periodically merge `dev` into `master` (typically multiple times per week)
 
 ## Structure
 
