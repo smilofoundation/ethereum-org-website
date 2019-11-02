@@ -1,7 +1,7 @@
 {
   "name": "ethereum-dot-org-website",
   "version": "0.0.1",
-  "description": "Ethereum.org website",
+  "description": "Smilo.org website",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",

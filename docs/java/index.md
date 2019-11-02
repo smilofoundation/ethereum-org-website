@@ -1,29 +1,29 @@
 ---
-title: Ethereum for Java Developers
+title: Smilo for Java Developers
 meta:
   - name: description
-    content: Learn how to develop for Ethereum using Java-based projects and tooling
+    content: Learn how to develop for Smilo using Java-based projects and tooling
   - property: og:title
-    content: Ethereum for Java Developers
+    content: Smilo for Java Developers
   - property: og:description
-    content: Learn how to develop for Ethereum using Java-based projects and tooling
+    content: Learn how to develop for Smilo using Java-based projects and tooling
 lang: en-US
 sidebar: auto
 sidebarDepth: 0
 
 ---
-# Ethereum for Java Developers
+# Smilo for Java Developers
 
-<div class="featured">Learn how to develop for Ethereum using Java-based projects and tooling</div><br>
+<div class="featured">Learn how to develop for Smilo using Java-based projects and tooling</div><br>
 
-Use Ethereum to create decentralized applications (or “dapps”) that utilize the benefits of cryptocurrency and blockchain technology. These dapps can be trustworthy, meaning that once they are deployed to Ethereum, they will always run as programmed. They can control digital assets in order to create new kinds of financial applications. They can be decentralized, meaning that no single entity or person controls them and are nearly impossible to censor.
+Use Smilo to create decentralized applications (or “dapps”) that utilize the benefits of cryptocurrency and blockchain technology. These dapps can be trustworthy, meaning that once they are deployed to Smilo, they will always run as programmed. They can control digital assets in order to create new kinds of financial applications. They can be decentralized, meaning that no single entity or person controls them and are nearly impossible to censor.
 
 <img src="https://asdgvdoyen.cloudimg.io/width/2560/webp/https://api.kauri.io:443/ipfs/QmPyoXQaK9uA1oedsptssr1EhYRBF1A9vrnypbKAkMhuxQ" width="100%" />
 
 
 ## Getting Started with Smart Contracts and the Solidity Language
 
-**Take your first steps to integrating Java with Ethereum**
+**Take your first steps to integrating Java with Smilo**
 
 Need a more basic primer first? Check out [ethereum.org/learn](/learn/) or [ethereum.org/developers.](/developers/)
 
@@ -32,7 +32,7 @@ Need a more basic primer first? Check out [ethereum.org/learn](/learn/) or [ethe
 - [Write your First Smart Contract](https://kauri.io/article/124b7db1d0cf4f47b414f8b13c9d66e2/remix-ide-your-first-smart-contract)
 - [Learn How to Compile and Deploy Solidity](https://kauri.io/article/973c5f54c4434bb1b0160cff8c695369/understanding-smart-contract-compilation-and-deployment)
 
-## Using Web3J and Hyperledger Besu (Pantheon) (Ethereum Client in Java)
+## Using Web3J and Hyperledger Besu (Pantheon) (Smilo Client in Java)
 
 - [Connecting to an Ethereum client with Java, Eclipse, and Web3J](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
 - [Manage an Ethereum account with Java and Web3j](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)

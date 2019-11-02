@@ -4,10 +4,10 @@
 const translations = {
   'en-US': {
     path: '/',
-    ethereum: 'Ethereum',
+    ethereum: 'Smilo',
     'link-text-artwork': 'Read about the new artwork!',
     'link-text-more': '→  More',
-    'page-home': 'Ethereum',
+    'page-home': 'Smilo',
     'page-beginners': 'Beginners',
     'page-use': 'Use',
     'page-learn': 'Learn',

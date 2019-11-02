@@ -2,18 +2,18 @@
 title: Home
 meta:
   - name: description
-    content: Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.
+    content: Smilo is a global, decentralized platform for money and new kinds of applications. On Smilo, you can write code that controls money, and build applications accessible anywhere in the world.
   - property: og:title
-    content: Home | Ethereum
+    content: Home | Smilo
   - property: og:description
-    content: Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.
+    content: Smilo is a global, decentralized platform for money and new kinds of applications. On Smilo, you can write code that controls money, and build applications accessible anywhere in the world.
 lang: en-US
 layout: home
 date: April 18, 2019
 sidebar: false
 ---
 
-<div class="center">Ethereum is a global, open-source platform for decentralized applications. On Ethereum, you can write code that controls digital value, runs exactly as programmed, and is accessible anywhere in the world.</div>
+<div class="center">Smilo is a global, open-source platform for decentralized applications. On Smilo, you can write code that controls digital value, runs exactly as programmed, and is accessible anywhere in the world.</div>
 
 <div class="intro-blocks">
 
@@ -21,8 +21,8 @@ sidebar: false
 
   <ul>
     <li><span class="arrow">→</span>Beginners</li>
-    <li class="highlight">Completely new to Ethereum?</li>
-    <li>What is Ethereum?</li>
+    <li class="highlight">Completely new to Smilo?</li>
+    <li>What is Smilo?</li>
     <li>Why should I care?</li>
   </ul>
 
@@ -32,7 +32,7 @@ sidebar: false
 
   <ul>
     <li><router-link to="/use/"><span class="arrow">→</span>Use</router-link></li>
-    <li><router-link to="/use/#_1-use-an-application-built-on-ethereum" class="black">What can I do with Ethereum today?</router-link></li>
+    <li><router-link to="/use/#_1-use-an-application-built-on-ethereum" class="black">What can I do with Smilo today?</router-link></li>
     <li><router-link to="/use/#_2-what-is-eth-and-how-do-i-get-it" class="black">How do I get Ether?</router-link></li>
     <li><router-link to="/use/#_3-what-is-a-wallet-and-which-one-should-i-use" class="black">What’s a wallet?</router-link></li>
   </ul>
@@ -43,7 +43,7 @@ sidebar: false
     <ul>
       <li><router-link to="/learn/"><span class="arrow">→</span>Learn</router-link></li>
       <li><router-link to="/learn/#ethereum-basics" class="black">Beginner resources</router-link></li>
-      <li><router-link to="/learn/#how-ethereum-works" class="black">How Ethereum works</router-link></li>
+      <li><router-link to="/learn/#how-ethereum-works" class="black">How Smilo works</router-link></li>
       <li><router-link to="/learn/#eth-2-0" class="black">ETH 2.0</router-link></li>
     </ul>
   </div>
@@ -64,7 +64,7 @@ sidebar: false
   <div class="intro-block">
     <ul>
       <li><router-link to="/enterprise/"><span class="arrow">→</span>Enterprise</router-link></li>
-      <li><router-link to="/enterprise/#why-enterprise-ethereum" class="black">Why Enterprise Ethereum?</router-link></li>
+      <li><router-link to="/enterprise/#why-enterprise-ethereum" class="black">Why Enterprise Smilo?</router-link></li>
       <li><router-link to="/enterprise/#enterprise-features" class="black">Enterprise Features</router-link></li>
       <li><router-link to="/enterprise/#enterprise-developer-community" class="black">Enterprise Developer Community</router-link></li>
     </ul>

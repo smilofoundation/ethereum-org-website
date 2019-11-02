@@ -1,7 +1,7 @@
 const { translate } = require('./theme/utils/translations');
 
 module.exports = {
-  title: 'Ethereum/',
+  title: 'Smilo/',
   themeConfig: {
     nav: [
       { text: translate('page-home'), link: '/' },

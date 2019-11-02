@@ -6,7 +6,7 @@
         <img
           class="header-logo sm-hide"
           src="../images/ethereum-logo-wireframe.png"
-          alt="Ethereum Logo"
+          alt="Smilo Logo"
         />
       </router-link>
       <NavLinks class="sm-hide" />
