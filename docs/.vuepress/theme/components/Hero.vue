@@ -1,6 +1,6 @@
 <template>
   <div class="hero relative content-block center">
-      <video id="hero-video" ref="vid" class="mx-auto inline-block" alt="Ethereum.org - Light" width="380" height="380" :src="videoSrc" playsinline autoplay loop muted />
+      <video id="hero-video" ref="vid" class="mx-auto inline-block" alt="smilo.foundation - Light" width="380" height="380" :src="videoSrc" playsinline autoplay loop muted />
       <svg v-if="!playing" @click="playVid" id="play-button" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" xml:space="preserve">
         <g>
           <path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30

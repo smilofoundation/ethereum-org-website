@@ -15,7 +15,7 @@
     <div class="menu inline flex flex-center">
       <SearchBox v-if="$site.themeConfig.search !== false" />
       <a
-        href="https://github.com/ethereum/ethereum-org-website"
+        href="https://github.com/smilofoundation/smilo-foundation-website"
         target="_blank"
         title="Fork This Page (Github)"
       >

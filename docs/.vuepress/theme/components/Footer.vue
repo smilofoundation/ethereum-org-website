@@ -4,13 +4,13 @@
       Artwork by <a href="https://impermanence.co" target="_blank">Lili Feyerabend</a> feat. <a href="https://ilankatin.com" target="_blank">ilan katin</a>, <a href="https://linktr.ee/mattiacprodukt" target="_blank">Mattia Cuttini</a>, <a href="https://oficinastk.github.io" target="_blank">Oficinas TK</a>, <a href="https://xcopyart.com" target="_blank">XCOPY</a>.
     </div>
     <ul>
-      <li><a href="https://github.com/ethereum" target="_blank">GitHub</a></li>
-      <li><a href="https://twitter.com/ethereum" target="_blank">Twitter</a></li>
-      <li><a href="https://blog.ethereum.org/">Blog</a></li>
+      <li><a href="https://github.com/smilofoundation" target="_blank">GitHub</a></li>
+      <li><a href="https://twitter.com/smiloplatform" target="_blank">Twitter</a></li>
+      <li><a href="https://blog.smilo.foundation/">Blog</a></li>
       <li><router-link to="/privacy-policy/">Privacy Policy</router-link></li>
       <li><router-link to="/terms-of-use/">Terms of Use</router-link></li>
       <li><router-link to="/cookie-policy/">Cookie Policy</router-link></li>
-      <li><a href="mailto:press@ethereum.org">Contact</a></li>
+      <li><a href="mailto:info@smilo.foundation">Contact</a></li>
     </ul>
   </footer>
 </template>
