@@ -11,9 +11,9 @@ Acceptance of the Terms of Use These terms of use are entered into by
 and between you and the Ethereum Foundation (\"Foundation\", \"we\" or
 \"us\"). The following terms and conditions, together with any documents
 they expressly incorporate by reference (collectively, these \"Terms of
-Use\"), govern your access to and use of ethereum.org, including any
-content, functionality and services offered on or through ethereum.org,
-ethereumfoundation.org and blog.ethereum.org (together, the
+Use\"), govern your access to and use of smilo.foundation, including any
+content, functionality and services offered on or through smilo.foundation,
+ethereumfoundation.org and blog.smilo.foundation (together, the
 \"Website\").
 
 Please read the Terms of Use carefully before you start to use the
@@ -120,7 +120,7 @@ Websites or any services or materials available through the Websites.
 
 If you wish to make any use of materials on the Websites other than that
 set out in this section, please address your request to:
-notices\@ethereum.org.
+notices\@smilo.foundation.
 
 If you print, copy, modify, download or otherwise use or provide any
 other person with access to any part of the Websites in breach of the
@@ -387,6 +387,6 @@ the Websites.
 
 This Websites is operated by the Foundation. All other feedback,
 comments, requests for technical support and other communications
-relating to the Websites should be directed to: <support@ethereum.org>.
+relating to the Websites should be directed to: <support@smilo.foundation>.
 
 Last modified: July 2018

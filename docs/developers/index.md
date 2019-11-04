@@ -20,7 +20,7 @@ sidebarDepth: 0
 
 **If you’re new to developing with Smilo, you’re in the right place.** These guides written by the Smilo community will introduce you to the basics of the Smilo stack and introduce core concepts that might be different from other app development you’re familiar with.
 
-Need a more basic primer first? Check out [ethereum.org/learn.](/learn/)
+Need a more basic primer first? Check out [smilo.foundation/learn.](/learn/)
 
 
 - [Getting up to speed on Smilo](https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe) *Aug 7, 2017 - Matt Condon*
@@ -105,7 +105,7 @@ Smilo has a large and growing number of tools to help developers build, test, an
 - [Discord](https://discord.gg/eCWjuvt)
 
 ### Python Tooling *Variety of libraries for Smilo interaction via Python*
-- [py.ethereum.org](http://python.ethereum.org/)
+- [py.smilo.foundation](http://python.smilo.foundation/)
 - [web3.py Github](https://github.com/ethereum/web3.py)
 - [web3.py Chat](https://gitter.im/ethereum/web3.py)
 
@@ -131,7 +131,7 @@ Smilo has a large and growing number of tools to help developers build, test, an
 - [Code samples](https://github.com/Azure-Samples/blockchain/blob/master/blockchain-workbench/application-and-smart-contract-samples/readme.md)
 
 ### Remix *Web-based IDE with built in static analysis, and a test blockchain virtual machine.*
-- [remix.ethereum.org](https://remix.ethereum.org/)
+- [remix.smilo.foundation](https://remix.smilo.foundation/)
 
 ### Superblocks *Web-based IDE with built in browser blockchain virtual machine, MetaMask integration, transaction logger, and other features.*
 - [superblocks.com/lab](https://superblocks.com/lab/)
@@ -249,7 +249,7 @@ The Smilo community maintains multiple testnets. These are used by developers to
 - [Universal faucet](https://faucets.blockxlabs.com)
 
 ## Clients & Running your own node
-The Smilo network is made up of many nodes who run compatible client software. The majority of these nodes run [Geth](https://geth.ethereum.org/) or [Parity](https://www.parity.io/ethereum/), each of which can be configured in different ways according to your needs.
+The Smilo network is made up of many nodes who run compatible client software. The majority of these nodes run [Geth](https://geth.smilo.foundation/) or [Parity](https://www.parity.io/ethereum/), each of which can be configured in different ways according to your needs.
 
 ### Geth *Smilo clients written in Go*
 - [Github](https://github.com/ethereum/go-ethereum)

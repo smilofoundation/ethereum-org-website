@@ -30,20 +30,19 @@ The best way to get started with Smilo is to jump right in! There are many Smilo
 Here are just a few apps built on Smilo - we rotate this list frequently!
 
 
-- [Gitcoin](https://gitcoin.co), a network of incentivized open-source developers
-- [Cent](https://beta.cent.co), a social network where you earn money by posting
-- [CryptoKitties](https://www.cryptokitties.co), a game where you collect and breed digital collectible cats
-- [DAI](https://makerdao.com/en/), a stable cryptocurrency that holds value at $1 USD
+- [20Face Play Market](https://play.google.com/store/apps/details?id=com.twentyface.identityapp&hl=en), Manage your decentralized identity with this application - Google Play
+- [20Face IOS](https://apps.apple.com/ug/app/20face-identity-app/id1465881031), Manage your decentralized identity with this application - Apple IOS
+
 
 Some of these applications might require a wallet - [see the section below for more information.](./#_3-what-is-a-wallet-and-which-one-should-i-use)
 
-Interested in looking at more applications built on Smilo?
+Interested in looking at more applications built on Smilo or Ethereum?
 
 
-- [Built on Smilo](https://docs.ethhub.io/built-on-ethereum/built-on-ethereum/) *Updated often - EthHub*
-- [40 Smilo Apps You Can Use Right Now](https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7) *Aug 15, 2018 - ConsenSys*
-- [Smilo Dapps](https://www.stateofthedapps.com/rankings/platform/ethereum) *Updated often - State of the Dapps*
-- [Smilo DeFi Ecosystem](https://defiprime.com/ethereum) *Updated often - Defiprime*
+- [Built on Ethereum](https://docs.ethhub.io/built-on-ethereum/built-on-ethereum/) *Updated often - EthHub*
+- [40 Ethereum Apps You Can Use Right Now](https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7) *Aug 15, 2018 - ConsenSys*
+- [Ethereum Dapps](https://www.stateofthedapps.com/rankings/platform/ethereum) *Updated often - State of the Dapps*
+- [Ethereum DeFi Ecosystem](https://defiprime.com/ethereum) *Updated often - Defiprime*
 - [DeFi Pulse](https://defipulse.com/) *Analytics + rankings of DeFi protocols - Defi Pulse*
 
 
@@ -54,13 +53,6 @@ XSM is Smilo's native currency. It is "digital money" that can be sent over the 
 
 The easiest way to get XSM is to buy some. There are many cryptocurrency exchanges that will allow you to buy XSM, but the one you should use will depend on where you live and how you want to pay.
 
-For more information on how to buy XSM check out these guides:
-
-
-- [How to buy Smilo (XSM)](https://support.mycrypto.com/how-to/getting-started/how-to-buy-ether-with-usd) *Updated often - MyCrypto*
-- [How to Buy Ether](https://docs.ethhub.io/using-ethereum/how-to-buy-ether/) *Updated often - EthHub*
-- [Smilo, a Digital Currency](https://www.cryptokitties.co/faq#ethereum-a-digital-currency) *CryptoKitties*
-
 
 ## 3. What is a wallet, and which one should I use?
 
@@ -70,10 +62,6 @@ Wallets are applications that make it easy to hold and send XSM, as well as inte
 Want to install a wallet?
 
 - [MetaMask](https://metamask.io) *browser extension for Chrome, Brave, Firefox and Opera*
-- [Opera](https://www.opera.com/crypto) *major browser with Smilo integration*
-- [MyCrypto](https://mycrypto.com) *web-based Smilo wallet*
-- [TrustWallet](https://trustwallet.com/) *Smilo compatible wallet for iOS and Android*
-- [MyEtherWallet](https://www.myetherwallet.com/) *client side Smilo wallet*
 
 
 Want to learn more about Smilo wallets?

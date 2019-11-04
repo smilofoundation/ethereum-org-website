@@ -20,7 +20,7 @@ New to Smilo ? You’re in the right place. Let’s start with the big picture.
 - An internet where everyone has access to an open financial system.
 - An internet built on neutral, open-access infrastructure, controlled by no company or person.
 
-**Launched in 2017, Smilo is a programmable blockchain.**
+**Launched in 2019, Smilo is a programmable blockchain focused on Privacy.**
 
 **Like other blockchains, Smilo has a native cryptocurrency called Smilo (XSM).** XSM is digital money. If you’ve heard of [Bitcoin](http://bitcoin.org/), XSM has many of the same features. It is purely digital, and can be sent to anyone anywhere in the world instantly. The supply of XSM isn’t controlled by any government or company - it is decentralized, and it is scarce. People all over the world can use XSM to make payments, as a store of value, or as collateral.
 

@@ -82,7 +82,7 @@ Public and private Smilo networks might need specific features required by netwo
 
 ### Security
 
-- [Clef](https://geth.ethereum.org/clef/Overview) *used to sign transactions and data and is meant as a replacement for geth’s account management*
+- [Clef](https://geth.smilo.foundation/clef/Overview) *used to sign transactions and data and is meant as a replacement for geth’s account management*
 - [EthSigner](https://gitter.im/PegaSysEng/EthSigner) *A transaction signing application to be used with a web3 provider*
 
 ### Tooling

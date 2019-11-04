@@ -16,7 +16,7 @@ sidebarDepth: 0
 
 **만약 당신이 이더리움을 처음 개발해보신다면, 여기 제대로 찾아오셨습니다.** 이더리움 커뮤니티에 의해 쓰여진 이 가이드들은 이더리움 기술 스택에 대한 기초부터 기존의 앱 개발과는 다를지도 모르는 새로운 개념들을 소개해 줄 거에요.
 
-좀 더 준비운동이 필요하시다고요? 그럼 [ethereum.org/ko/learn](/ko/learn/)로 들어와 주세요.
+좀 더 준비운동이 필요하시다고요? 그럼 [smilo.foundation/ko/learn](/ko/learn/)로 들어와 주세요.
 
 - [이더리움 쫓아가기](https://medium.com/@mattcondon/getting-up-to-speed-on-ethereum-63ed28821bbe) _Aug 7, 2017 - Matt Condon_
 - [이더리움 In Depth, 파트 1](https://blog.zeppelin.solutions/ethereum-in-depth-part-1-968981e6f833) _May 11, 2018 - Facu Spagnuolo_
@@ -98,7 +98,7 @@ sidebarDepth: 0
 
 ### 리믹스(Remix) _정적 분석 도구와 테스트용 블록체인 가상 머신을 포함하는 웹 기반 통합개발환경_
 
-- [홈페이지](https://remix.ethereum.org/)
+- [홈페이지](https://remix.smilo.foundation/)
 
 ### 슈퍼블록스(Superblocks) _웹 기반 통합개발환경으로 브라우저 빌트인 형태의 블록체인 가상머신, 메타마스트(MetaMask) 통합, 전송 로그 기록 등의 다양한 기능을 포함_
 
@@ -218,7 +218,7 @@ sidebarDepth: 0
 
 ## 클라이언트 & 나만의 노드를 직접 운영하기
 
-이더리움 네트워크는 호환 가능한 클라이언트 소프트웨어를 실행하는 수많은 노드로 구성되어 있습니다. 대부분의 노드는 [ 게스(Geth) ](https://geth.ethereum.org/) 또는 [ 패리티(Parity)](https://www.parity.io/ethereum/) 클라이언트를 구동하고 있으며 각각 니즈에 따라 다양한 방식으로 구성되어 사용할 수 있습니다.
+이더리움 네트워크는 호환 가능한 클라이언트 소프트웨어를 실행하는 수많은 노드로 구성되어 있습니다. 대부분의 노드는 [ 게스(Geth) ](https://geth.smilo.foundation/) 또는 [ 패리티(Parity)](https://www.parity.io/ethereum/) 클라이언트를 구동하고 있으며 각각 니즈에 따라 다양한 방식으로 구성되어 사용할 수 있습니다.
 
 ### 게스(Geth) _고(Go) 언어로 작성된 이더리움 클라이언트_
 
@@ -314,14 +314,14 @@ sidebarDepth: 0
 
 ## 표준(Standards)
 
-이더리움 커뮤니티는 개발자에게 도움이 되는 많은 표준을 채택해왔습니다. 일반적으로 표준들은 [ 이더리움 개선 제안(Ethereum Improvement Proposals, EIPs)](http://eips.ethereum.org/)을 통해 소개되고, 이더리움 커뮤니티의 구성원들은 [EIP-1에 정의된 표준 절차](http://eips.ethereum.org/EIPS/eip-1) 에 따라 제안된 내용에 대해 토론합니다.
+이더리움 커뮤니티는 개발자에게 도움이 되는 많은 표준을 채택해왔습니다. 일반적으로 표준들은 [ 이더리움 개선 제안(Ethereum Improvement Proposals, EIPs)](http://eips.smilo.foundation/)을 통해 소개되고, 이더리움 커뮤니티의 구성원들은 [EIP-1에 정의된 표준 절차](http://eips.smilo.foundation/EIPS/eip-1) 에 따라 제안된 내용에 대해 토론합니다.
 
-- [이더리움개선제안(EIP) 목록](http://eips.ethereum.org/)
+- [이더리움개선제안(EIP) 목록](http://eips.smilo.foundation/)
 - [이더리움 개선제안 깃허브 레포지토리](https://github.com/ethereum/EIPs)
 - [이더리움 개선제안 토론 게시판](https://ethereum-magicians.org/c/eips)
 - [이더리움 거버넌스 개요](https://blog.bmannconsulting.com/ethereum-governance/) _2019년 3월 31일 - 보리스 맨(Boris Mann)_
 - [이더리움 코어 개발자 회의 플레이리스트](https://www.youtube.com/playlist?list=PLaM7G4Llrb7zfMXCZVEXEABT8OSnd4-7w) _(유튜브 재생 목록)_
-  이더리움개선제안이 프로토콜-수준보다는 어플리케이션-수준의 표준일 경우(예: 스마트 컨트렉트 형식에 대한 표준), 해당 제안들은 [이더리움 논평 요청서(Ethereum Requests for Comment, ERC)](https://eips.ethereum.org/erc)라는 이름으로 소개됩니다. 많은 ERC 표준들이 이더리움 생태계에서 널리 사용되는 핵심적인 표준입니다.
-- [ERCs 리스트](http://eips.ethereum.org/erc)
-- [ERC20 - 토큰을 위한 표준 인터페이스](https://eips.ethereum.org/EIPS/eip-20)
-- [ERC721 - 대체불가능(non-fungible) 토큰을 위한 표준 인터페이스](https://eips.ethereum.org/EIPS/eip-721)
+  이더리움개선제안이 프로토콜-수준보다는 어플리케이션-수준의 표준일 경우(예: 스마트 컨트렉트 형식에 대한 표준), 해당 제안들은 [이더리움 논평 요청서(Ethereum Requests for Comment, ERC)](https://eips.smilo.foundation/erc)라는 이름으로 소개됩니다. 많은 ERC 표준들이 이더리움 생태계에서 널리 사용되는 핵심적인 표준입니다.
+- [ERCs 리스트](http://eips.smilo.foundation/erc)
+- [ERC20 - 토큰을 위한 표준 인터페이스](https://eips.smilo.foundation/EIPS/eip-20)
+- [ERC721 - 대체불가능(non-fungible) 토큰을 위한 표준 인터페이스](https://eips.smilo.foundation/EIPS/eip-721)

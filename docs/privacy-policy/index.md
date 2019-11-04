@@ -9,8 +9,8 @@ lang: en-US
 
 Stiftung Ethereum, a Swiss Stiftung, located at Zeughausgasse 7a, 6300
 Zug, Switzerland (the \"Foundation,\" \"we\" or \"us\") is the operator
-of this website, together with ethereum.org, ethereumfoundation.org or
-blog.ethereum.org (each a "website" and together, our "websites"). As
+of this website, together with smilo.foundation, ethereumfoundation.org or
+blog.smilo.foundation (each a "website" and together, our "websites"). As
 the operator of the sites, we take the protection of your personal data
 very seriously. We collect, process and use your personal data in
 accordance with this privacy policy and in compliance with the Swiss
@@ -31,17 +31,17 @@ personal data is correct.
 **2. Responsible Person**
 
 For any matters, relating to data protection you may contact
-<notices@ethereum.org> in writing by e-mail or letter to the following
+<notices@smilo.foundation> in writing by e-mail or letter to the following
 address:
 
        Zeughausgasse 7A,
        6302 Zug, Switzerland
-       Email: notices@ethereum.org
+       Email: notices@smilo.foundation
 
 Our representative in the EU according to article 27 GDPR is:
 
     Oranienstrasse 6, 10997 Berlin
-    Email: notices@ethereum.org
+    Email: notices@smilo.foundation
 
 **3. Data processing in connection with the sites**
 
@@ -153,7 +153,7 @@ indications of illegal use.
 
 **3.4 Opening an account for the Ethereum Web Forum**
 
-To access our forums at <https://forum.ethereum.org/> you must set up an
+To access our forums at <https://forum.smilo.foundation/> you must set up an
 account and provide us with your username, e-mail address, skype name,
 and password.
 
@@ -166,7 +166,7 @@ lit. a GDPR.
 **3.5 Contact possibility via the website**
 
 You may contact us via our websites contact page or by e-mail to the
-following e-mail address: <support@ethereum.org>. For this, we require
+following e-mail address: <support@smilo.foundation>. For this, we require
 the following information: Name, Subject, E-Mail address, message.
 
 We use this data, which you may give voluntarily, only in order to
@@ -469,6 +469,6 @@ to:
     <https://www.admin.ch/opc/en/classified-compilation/19930159/index.html>
 
 Please do not hesitate to contact us if you have any questions regarding
-this Privacy Policy by contacting us at [support@ethereum.org](mailto:support@ethereum.org). Last
+this Privacy Policy by contacting us at [support@smilo.foundation](mailto:support@smilo.foundation). Last
 
 Updated: July 2018

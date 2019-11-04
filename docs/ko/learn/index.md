@@ -26,7 +26,7 @@ sidebarDepth: 0
 - [Kauri](https://kauri.io) _이더리움과 관련 프로젝트에 대한 기술적 자료와 튜토리얼을 제공합니다_
 - [Ethereum Foundation YouTube](https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g) _이더리움에 대한 영상 자료를 제공합니다_
 - [Week in Ethereum News](https://weekinethereumnews.com/) _이더리움 생태계의 주요 발전 사항들을 전해주는 주간 뉴스레터 서비스를 제공합니다_
-- [What’s new in ETH 2.0](https://notes.ethereum.org/c/Sk8Zs--CQ) _이더리움 2.0의 개발 사항에 대해 주기적인 뉴스레터를 제공합니다_
+- [What’s new in ETH 2.0](https://notes.smilo.foundation/c/Sk8Zs--CQ) _이더리움 2.0의 개발 사항에 대해 주기적인 뉴스레터를 제공합니다_
 - [ETHGlobal](https://ethglobal.co) _이더리움 해커톤에 대한 정보를 제공합니다 - 여러분 주변에서 진행되는 해커톤에 참여해보세요!_
 
 ## 이더리움 기초
@@ -53,7 +53,7 @@ sidebarDepth: 0
 
 "스마트 컨트랙트"는 간단히 이더리움에서 실행되는 코드입니다. 이더리움에서 실행되는 코드는 이더 및 여타 디지털 자산과 같은 가치를 보유한 토큰들을 제어할 수 있기 때문에 "컨트랙트"라고 불립니다.
 
-- 이더리움 스마트 컨트랙트를 직접 코드로 작성하고 싶다면 다음 링크를 방문해주세요. [ethereum.org/ko/developers](/ko/developers/)
+- 이더리움 스마트 컨트랙트를 직접 코드로 작성하고 싶다면 다음 링크를 방문해주세요. [smilo.foundation/ko/developers](/ko/developers/)
 
 ## 작업증명과 채굴
 
@@ -66,9 +66,9 @@ sidebarDepth: 0
 
 ## 클라이언트들과 노드들
 
-이더리움 네트워크는 호환 가능한 클라이언트 소프트웨어를 실행하는 수많은 노드에 의해 구축되어 있습니다. 대다수의 노드가 사용하는 클라이언트는 2가지가 존재합니다: [Geth](https://geth.ethereum.org/) (Go 언어로 작성) 그리고 [Parity](https://www.parity.io/ethereum/) (Rust 언어로 작성).
+이더리움 네트워크는 호환 가능한 클라이언트 소프트웨어를 실행하는 수많은 노드에 의해 구축되어 있습니다. 대다수의 노드가 사용하는 클라이언트는 2가지가 존재합니다: [Geth](https://geth.smilo.foundation/) (Go 언어로 작성) 그리고 [Parity](https://www.parity.io/ethereum/) (Rust 언어로 작성).
 
-- 이더리움 노드를 운영하고 싶으신가요? → [ethereum.org/developers](/developers/#clients-running-your-own-node)
+- 이더리움 노드를 운영하고 싶으신가요? → [smilo.foundation/developers](/developers/#clients-running-your-own-node)
 - [이더리움 클라이언트 모두 보기](https://github.com/ConsenSys/ethereum-developer-tools-list#ethereum-clients)
 
 ## 이더리움 확장성 향상
