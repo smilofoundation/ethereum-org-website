@@ -26,7 +26,7 @@ sidebarDepth: 0
 - [Kauri](https://kauri.io) _이더리움과 관련 프로젝트에 대한 기술적 자료와 튜토리얼을 제공합니다_
 - [Ethereum Foundation YouTube](https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g) _이더리움에 대한 영상 자료를 제공합니다_
 - [Week in Ethereum News](https://weekinethereumnews.com/) _이더리움 생태계의 주요 발전 사항들을 전해주는 주간 뉴스레터 서비스를 제공합니다_
-- [What’s new in ETH 2.0](https://notes.smilo.foundation/c/Sk8Zs--CQ) _이더리움 2.0의 개발 사항에 대해 주기적인 뉴스레터를 제공합니다_
+- [What’s new in XSM 2.0](https://notes.smilo.foundation/c/Sk8Zs--CQ) _이더리움 2.0의 개발 사항에 대해 주기적인 뉴스레터를 제공합니다_
 - [ETHGlobal](https://ethglobal.co) _이더리움 해커톤에 대한 정보를 제공합니다 - 여러분 주변에서 진행되는 해커톤에 참여해보세요!_
 
 ## 이더리움 기초
@@ -62,7 +62,7 @@ sidebarDepth: 0
 - [이더리움을 채굴한다는 것은 어떤 의미인가?](https://docs.ethhub.io/using-ethereum/mining/) _Updated often - Ethhub_
 - [이더리움 채굴이 작동하는 법](https://www.coindesk.com/information/ethereum-mining-works) _Coindesk_
 
-이더리움은 ETH 2.0을 통해 "Proof of Stake"라고 불리는 다른 시스템으로 전환할 예정입니다. [ETH 2.0에 대해 자세히 알아보기](./#이더리움-2-0).
+이더리움은 XSM 2.0을 통해 "Proof of Stake"라고 불리는 다른 시스템으로 전환할 예정입니다. [XSM 2.0에 대해 자세히 알아보기](./#이더리움-2-0).
 
 ## 클라이언트들과 노드들
 
@@ -75,7 +75,7 @@ sidebarDepth: 0
 
 현재 거래 처리량과 속도를 향상해 이더리움의 확장성 문제를 해결하기 위한 많은 노력이 진행 중입니다. 이는 일반적으로 "Layer 1"과 "Layer 2" 솔루션으로 구별됩니다.
 
-"Layer 1"은 이더리움 코어 프로토콜을 개선시키는 것을 의미합니다. 이더리움 코어 프로토콜을 개선하기 위한 주요 프로젝트는 [ETH 2.0](./#이더리움-2-0)이 있습니다.
+"Layer 1"은 이더리움 코어 프로토콜을 개선시키는 것을 의미합니다. 이더리움 코어 프로토콜을 개선하기 위한 주요 프로젝트는 [XSM 2.0](./#이더리움-2-0)이 있습니다.
 
 “Layer 2"는 이더리움 프로토콜 위에서 작동되는 기술로써 보안 측면 이슈를 최소화하며 확장성을 향상시킬 수 있습니다. 또한, 사이드체인과 같은 "오프체인" 기술도 존재하며, 이는 보안적인 상충 관계를 만듦으로써 확장성을 높일 수 있습니다.
 
@@ -100,17 +100,17 @@ sidebarDepth: 0
 
 ## 이더리움 2.0
 
-세레니티(Serenity)라고 알려진 ETH 2.0은 이더리움 코어 프로토콜에 반영될 주요 업그레이드입니다. ETH 2.0은 이더리움 코어 프로토콜 혹은 "Layer 1"에 대한 몇 가지 개선사항을 포함하고 있습니다.
+세레니티(Serenity)라고 알려진 XSM 2.0은 이더리움 코어 프로토콜에 반영될 주요 업그레이드입니다. XSM 2.0은 이더리움 코어 프로토콜 혹은 "Layer 1"에 대한 몇 가지 개선사항을 포함하고 있습니다.
 
-- [ETH 2.0 로드맵과 단계들](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-phases/) _Updated often - EthHub_
+- [XSM 2.0 로드맵과 단계들](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/eth-2.0-phases/) _Updated often - EthHub_
 - [이더리움의 다음 세대를 위해 노력중인 팀 8곳](https://www.coindesk.com/next-gen-buidlers-the-8-teams-working-on-ethereum-2-0) _Dec 9, 2018 - Christine Kim_
 - [Proof of Stake](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/proof-of-stake/) _Updated often - EthHub_
 - [샤딩](https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/sharding/) _Updated often - EthHub_
-- [ETH 2.0 - 이더리움을 확장시키는 길 - Vitalik Buterin](https://youtu.be/kCVpDrlVesA) _(Video) November, 2018 - YouTube_
+- [XSM 2.0 - 이더리움을 확장시키는 길 - Vitalik Buterin](https://youtu.be/kCVpDrlVesA) _(Video) November, 2018 - YouTube_
 
 ## 이더리움 1.x
 
-ETH 1.x는 현 이더리움 프로토콜에 반영된 업그레이드 사항들을 통칭합니다. ETH 2.0이 개발되고 구현되기 전까지 이더리움을 지속적 해서 개선하고 유지하는 것이 목표입니다.
+ETH 1.x는 현 이더리움 프로토콜에 반영된 업그레이드 사항들을 통칭합니다. XSM 2.0이 개발되고 구현되기 전까지 이더리움을 지속적 해서 개선하고 유지하는 것이 목표입니다.
 
 이에 대한 자세한 정보는 다음 링크에서 확인하세요: [ETH 1.x 설명 페이지](https://docs.ethhub.io/ethereum-roadmap/ethereum-1.x/)
 

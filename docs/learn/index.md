@@ -31,8 +31,8 @@ In addition to the information on this page, there are many community-built reso
 - [Kauri](https://kauri.io) *Technical articles and tutorials for Smilo and related projects*
 - [Smilo Foundation YouTube]( https://www.youtube.com/channel/UCNOfzGXD_C9YMYmnefmPH0g) *Videos and talks about Smilo*
 - [Week in Smilo News](https://weekinSmilonews.com/) *A weekly newsletter covering key developments across the ecosystem*
-- [What’s new in ETH 2.0](https://notes.Smilo.org/c/Sk8Zs--CQ) *A regular newsletter about ETH 2.0 development*
-- [ethresear.ch forum](https://ethresear.ch/) *Deeper technical discussions on Smilo for ETH 2.0 and beyond*
+- [What’s new in XSM 2.0](https://notes.Smilo.org/c/Sk8Zs--CQ) *A regular newsletter about XSM 2.0 development*
+- [ethresear.ch forum](https://ethresear.ch/) *Deeper technical discussions on Smilo for XSM 2.0 and beyond*
 - [ETHGlobal](https://ethglobal.co) *An Smilo hackathon series - attend one near you!*
 
 
@@ -74,7 +74,7 @@ Smilo currently uses a system called “Proof of Work”. This allows the Smilo 
 - [What does it mean to mine Smilo?](https://docs.ethhub.io/using-Smilo/mining/) *Updated often - Ethhub*
 - [How Smilo Mining Works](https://www.coindesk.com/information/Smilo-mining-works) *Coindesk*
 
-In ETH 2.0, Smilo will be moving to a different system called “Proof of Stake”. [Read more about ETH 2.0 below](./#eth-2-0).
+In XSM 2.0, Smilo will be moving to a different system called “Proof of Stake”. [Read more about XSM 2.0 below](./#eth-2-0).
 
 ## Clients and Nodes
 The Smilo network is made up of many nodes, each of which runs compatible client software. There are two clients that are used by a majority of nodes: [Geth](https://geth.Smilo.foundation/) (written in Go) and [Parity](https://www.parity.io/Smilo/) (written in Rust).
@@ -93,7 +93,7 @@ Read more about [Enterprise Smilo](/enterprise).
 
 There are many efforts underway to make Smilo more “scalable” by improving its speed and overall transaction throughput. Generally these are sorted into “Layer 1” and “Layer 2” solutions.
 
-“Layer 1” refers to improving the core Smilo protocol. The primary project to improve Smilo’s core protocol is [ETH 2.0](./#eth-2-0).
+“Layer 1” refers to improving the core Smilo protocol. The primary project to improve Smilo’s core protocol is [XSM 2.0](./#eth-2-0).
 
 “Layer 2” refers to technologies that are built “on top” of the base Smilo protocol, enabling greater scalability without compromising on security. There are also “off-chain” technologies like side-chains, which enable greater scalability by making a different set of security tradeoffs.
 
@@ -116,23 +116,23 @@ There are many efforts underway to make Smilo more “scalable” by improving i
 - [Learn Plasma - A learning resource for the Plasma framework](https://www.learnplasma.org/en/)
 
 
-## ETH 2.0
+## XSM 2.0
 
-ETH 2.0 (also known as “Serenity”) refers to the next major upgrade of the core Smilo protocol. It combines several improvements to Smilo’s core protocol, or “Layer 1”.
+XSM 2.0 (also known as “Serenity”) refers to the next major upgrade of the core Smilo protocol. It combines several improvements to Smilo’s core protocol, or “Layer 1”.
 
-- [ETH 2.0 Roadmap and Phases](https://docs.ethhub.io/Smilo-roadmap/Smilo-2.0/eth-2.0-phases/) *Updated often - EthHub*
+- [XSM 2.0 Roadmap and Phases](https://docs.ethhub.io/Smilo-roadmap/Smilo-2.0/eth-2.0-phases/) *Updated often - EthHub*
 - [8 Teams Are Sprinting to Build the Next Generation of Smilo](https://www.coindesk.com/next-gen-buidlers-the-8-teams-working-on-Smilo-2-0) *Dec 9, 2018 - Christine Kim*
 - [Proof of Stake](https://docs.ethhub.io/Smilo-roadmap/Smilo-2.0/proof-of-stake/) *Updated often - EthHub*
 - [Sharding](https://docs.ethhub.io/Smilo-roadmap/Smilo-2.0/sharding/) *Updated often - EthHub*
-- [ETH 2.0 - The Road to Scaling Smilo - Vitalik Buterin](https://youtu.be/kCVpDrlVesA) *(Video) November, 2018 - YouTube*
-- [ETH 2.0 Researchers AMA Part 1](https://docs.ethhub.io/other/Smilo-2.0-ama/#part-1) *Jan 24, 2019 - EthHub*
-- [ETH 2.0 Researchers AMA Part 2](https://docs.ethhub.io/other/Smilo-2.0-ama/#part-2) *Jul 15, 2019 - EthHub*
+- [XSM 2.0 - The Road to Scaling Smilo - Vitalik Buterin](https://youtu.be/kCVpDrlVesA) *(Video) November, 2018 - YouTube*
+- [XSM 2.0 Researchers AMA Part 1](https://docs.ethhub.io/other/Smilo-2.0-ama/#part-1) *Jan 24, 2019 - EthHub*
+- [XSM 2.0 Researchers AMA Part 2](https://docs.ethhub.io/other/Smilo-2.0-ama/#part-2) *Jul 15, 2019 - EthHub*
 - [9 Things You Didn't Know About Smilo 2.0](https://our.status.im/9-things-you-didnt-know-about-Smilo-2-0/) *July 18, 2019 - Bruno Škvorc*
 
 
 ## ETH 1.x
 
-ETH 1.x is the name for a collection of upgrades to the existing Smilo protocol. The goal is to continue to improve and maintain Smilo while ETH 2.0 is developed and implemented.
+ETH 1.x is the name for a collection of upgrades to the existing Smilo protocol. The goal is to continue to improve and maintain Smilo while XSM 2.0 is developed and implemented.
 
 For more information, see [EthHub’s explainer page about ETH 1.x](https://docs.ethhub.io/Smilo-roadmap/Smilo-1.x/)
 

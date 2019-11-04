@@ -13,7 +13,7 @@ date: April 18, 2019
 sidebar: false
 ---
 
-<div class="center">Smilo is a global, open-source platform for decentralized applications. On Smilo, you can write code that controls digital value, runs exactly as programmed, and is accessible anywhere in the world.</div>
+<div class="center">Smilo is a fork of Ethereum focused on privacy. Smilo is a global, open-source platform for decentralized applications. On Smilo, you can write code that controls digital value, runs exactly as programmed, and is accessible anywhere in the world.</div>
 
 <div class="intro-blocks">
 
@@ -44,7 +44,7 @@ sidebar: false
       <li><router-link to="/learn/"><span class="arrow">→</span>Learn</router-link></li>
       <li><router-link to="/learn/#ethereum-basics" class="black">Beginner resources</router-link></li>
       <li><router-link to="/learn/#how-ethereum-works" class="black">How Smilo works</router-link></li>
-      <li><router-link to="/learn/#eth-2-0" class="black">ETH 2.0</router-link></li>
+      <li><router-link to="/learn/#eth-2-0" class="black">XSM 2.0</router-link></li>
     </ul>
   </div>
 
