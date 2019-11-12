@@ -8,7 +8,7 @@ lang: en-US
 **PLEASE READ THESE TERMS OF USE BEFORE USING THE WEBSITES.**
 
 Acceptance of the Terms of Use These terms of use are entered into by
-and between you and the Ethereum Foundation (\"Foundation\", \"we\" or
+and between you and the Smilo Foundation (\"Foundation\", \"we\" or
 \"us\"). The following terms and conditions, together with any documents
 they expressly incorporate by reference (collectively, these \"Terms of
 Use\"), govern your access to and use of smilo.foundation, including any
