@@ -29,7 +29,7 @@ For more in depth information, here are some related articles:
 - [5 Reasons Why Enterprise Smilo Is so Much More Than a Distributed Ledger Technology](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
 - [Blockchain Use Cases and Applications by Industry](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [EY releases zero-knowledge proof blockchain transaction technology to the public domain to advance blockchain privacy standards](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
-- [Introduction to Quorum: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
+- [Introduction to Smilo: Blockchain for the Financial Sector](https://medium.com/blockchain-at-berkeley/introduction-to-Smilo-blockchain-for-the-financial-sector-58813f84e88c)
 
 
 ## Organizations
@@ -52,7 +52,7 @@ The following projects provide blockchain services for enterprises grade systems
 - [Blockapps](https://blockapps.net/) *implementation of the Enterprise Smilo protocol, tooling and APIs that form the STRATO platform*
 - [Clearmatics](https://www.clearmatics.com/about) *protocols and peer-to-peer platform architecture, blockchain R&D company*
 - [PegaSys Plus](https://pegasys.tech/enterprise/) *offers the same features and functionalities as HF Besu, plus additional enterprise focused benefits*
-- [Quorum](https://www.goquorum.com/) *open source blockchain platform that combines the innovation of the public Smilo community with enhancements to support enterprise needs*
+- [Smilo](https://www.smilo.foundation/) *open source blockchain platform that combines the innovation of the public Smilo community with enhancements to support enterprise needs*
 
 ## Protocol and Infrastructure
 
@@ -70,7 +70,7 @@ Public and private Smilo networks might need specific features required by netwo
 ### Permissioning
 
 - [Pegasys Permissioning Contracts](https://github.com/PegaSysEng/permissioning-smart-contracts)
-- [Quorum Permissioning solution](https://github.com/jpmorganchase/quorum/wiki/Security)
+- [Smilo Permissioning solution](https://github.com/smilofoundation/Smilo/wiki/Security)
 
 ### Privacy
 
@@ -78,7 +78,7 @@ Public and private Smilo networks might need specific features required by netwo
 *More information [here](https://bravenewcoin.com/insights/ernst-and-young-rolls-out-'nightfall-to-enable-private-transactions-on)*
 - [Pegasys' Orion](https://docs.pantheon.pegasys.tech/en/stable/Concepts/Privacy/Privacy-Overview/)
 *More information [here](https://pegasys.tech/privacy-in-pantheon-how-it-works-and-why-your-enterprise-should-care/)*
-- [Quorum's Tessera](https://docs.goquorum.com/en/latest/Privacy/Tessera/Tessera/) *More information [here](https://github.com/jpmorganchase/tessera/wiki/How-Tessera-works)*
+- [Smilo's Tessera](https://www.smilo.foundation/en/latest/Privacy/Tessera/Tessera/) *More information [here](https://github.com/smilofoundation/tessera/wiki/How-Tessera-works)*
 
 ### Security
 
@@ -100,4 +100,4 @@ Public and private Smilo networks might need specific features required by netwo
 - [Hyperledger Burrow Rocketchat](https://chat.hyperledger.org/channel/burrow)
 - [Pantheon gitter](https://gitter.im/PegaSysEng/pantheon)
 - [PegaSys twitter](https://twitter.com/Kaleido_io)
-- [Quorum Slack channel](http://bit.ly/quorum-slack)
+- [Smilo Slack channel](http://bit.ly/Smilo-slack)
