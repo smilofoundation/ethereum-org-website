@@ -16,12 +16,13 @@ sidebar: false
 <div class="center">
 Smilo = A Web3 Hybrid blockchain facilitating  public and private smart contracts - safeguarding personal data for individuals in their interactions with organisations. 
 Its core benefits are it is public, fast, free and offers full privacy for its users. 
-It is build usingn years of research and development and advanced security developed by Ethereum, Clearmatics, Etherzero, and JPMorgan Chase + Smilo teams.
+It is build using years of research and development and advanced security developed by Ethereum, Clearmatics, Etherzero, JPMorgan Chase and the Smilo team of opensource contributors.
 
 To make it more tangible, we are combining both public and private transactions and smart contracts  
 in such a way that individuals are controlling their personal data by running a light node themselves in form of a (mobile) data wallet that only they can access and share contents of 
 either encrypted or publically depending on requirements and under the terms of the individual. 
 
+Smilo Team of independent open source contributors developed and adapted existing consensus algorithms trusted and extensively tested by industry such as Clique, Tendermint DAO, Istanbul DAO and Sport and Sport DAO, providing its users with Permissionless and Permissioned POS and POA options.
 
 </div>
 
