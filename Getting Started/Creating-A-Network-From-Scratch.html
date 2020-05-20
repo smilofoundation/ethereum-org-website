@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Creating a network from scratch | Smilo</title>
+    <meta name="description" content="">
+    <meta/ name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,maximum-scale=1"></meta/>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="smilo.foundation">
+  <meta property="og:url" content="https://smilo.foundation">
+  <meta property="og:image" content="https://smilo.foundation/og-image.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="@smiloplatform">
+  <meta property="twitter:creator" content="@smiloplatform">
+  <meta property="twitter:image" content="https://smilo.foundation/og-image-twitter.png">
+    <link rel="preload" href="/assets/css/0.styles.77284882.css" as="style"><link rel="preload" href="/assets/js/app.1c5a03b7.js" as="script"><link rel="preload" href="/assets/js/3.030594d3.js" as="script"><link rel="preload" href="/assets/js/26.40635db2.js" as="script"><link rel="prefetch" href="/assets/js/10.6e3e9273.js"><link rel="prefetch" href="/assets/js/100.54f82e92.js"><link rel="prefetch" href="/assets/js/101.0d7e4727.js"><link rel="prefetch" href="/assets/js/102.e09888c2.js"><link rel="prefetch" href="/assets/js/103.12c4db4a.js"><link rel="prefetch" href="/assets/js/104.917d85b3.js"><link rel="prefetch" href="/assets/js/105.2c8a97c2.js"><link rel="prefetch" href="/assets/js/106.137429f1.js"><link rel="prefetch" href="/assets/js/107.3dd3c2b0.js"><link rel="prefetch" href="/assets/js/108.ae0d09f1.js"><link rel="prefetch" href="/assets/js/109.05199ced.js"><link rel="prefetch" href="/assets/js/11.f4ce1d53.js"><link rel="prefetch" href="/assets/js/110.72857918.js"><link rel="prefetch" href="/assets/js/111.5c9c5ec1.js"><link rel="prefetch" href="/assets/js/112.4b4aa971.js"><link rel="prefetch" href="/assets/js/113.467b4f39.js"><link rel="prefetch" href="/assets/js/114.e37bc94a.js"><link rel="prefetch" href="/assets/js/115.e2033c8c.js"><link rel="prefetch" href="/assets/js/116.0f3bb3de.js"><link rel="prefetch" href="/assets/js/117.97f66c3d.js"><link rel="prefetch" href="/assets/js/118.61cc124c.js"><link rel="prefetch" href="/assets/js/119.70620c50.js"><link rel="prefetch" href="/assets/js/12.068e04f8.js"><link rel="prefetch" href="/assets/js/120.43a34ff2.js"><link rel="prefetch" href="/assets/js/121.80ec60ad.js"><link rel="prefetch" href="/assets/js/122.f38284d1.js"><link rel="prefetch" href="/assets/js/123.1dc518a3.js"><link rel="prefetch" href="/assets/js/124.5765d2e5.js"><link rel="prefetch" href="/assets/js/125.c734c24f.js"><link rel="prefetch" href="/assets/js/126.79b78b84.js"><link rel="prefetch" href="/assets/js/127.25ff388a.js"><link rel="prefetch" href="/assets/js/128.1496ac92.js"><link rel="prefetch" href="/assets/js/129.4e04e6cc.js"><link rel="prefetch" href="/assets/js/13.bda859e5.js"><link rel="prefetch" href="/assets/js/130.f107b701.js"><link rel="prefetch" href="/assets/js/131.08b783f2.js"><link rel="prefetch" href="/assets/js/14.2a400896.js"><link rel="prefetch" href="/assets/js/15.295d62fc.js"><link rel="prefetch" href="/assets/js/16.652a89b0.js"><link rel="prefetch" href="/assets/js/17.3be5eda0.js"><link rel="prefetch" href="/assets/js/18.32454e69.js"><link rel="prefetch" href="/assets/js/19.a08feb93.js"><link rel="prefetch" href="/assets/js/2.4b1d4bf3.js"><link rel="prefetch" href="/assets/js/20.34e166bb.js"><link rel="prefetch" href="/assets/js/21.1d2ef408.js"><link rel="prefetch" href="/assets/js/22.2a6cd144.js"><link rel="prefetch" href="/assets/js/23.5adcd431.js"><link rel="prefetch" href="/assets/js/24.9bccf9d1.js"><link rel="prefetch" href="/assets/js/25.d8fd4102.js"><link rel="prefetch" href="/assets/js/27.9a5f2d44.js"><link rel="prefetch" href="/assets/js/28.2d385e7d.js"><link rel="prefetch" href="/assets/js/29.da082ef6.js"><link rel="prefetch" href="/assets/js/30.73aec03b.js"><link rel="prefetch" href="/assets/js/31.f86eee3a.js"><link rel="prefetch" href="/assets/js/32.46e321e1.js"><link rel="prefetch" href="/assets/js/33.e63e33f3.js"><link rel="prefetch" href="/assets/js/34.1d8e044f.js"><link rel="prefetch" href="/assets/js/35.af094489.js"><link rel="prefetch" href="/assets/js/36.fd9805c3.js"><link rel="prefetch" href="/assets/js/37.7a620d2c.js"><link rel="prefetch" href="/assets/js/38.eac140f8.js"><link rel="prefetch" href="/assets/js/39.3a26a316.js"><link rel="prefetch" href="/assets/js/4.9ea4066c.js"><link rel="prefetch" href="/assets/js/40.c0974fab.js"><link rel="prefetch" href="/assets/js/41.62cd62ac.js"><link rel="prefetch" href="/assets/js/42.20944c6a.js"><link rel="prefetch" href="/assets/js/43.e88d32e5.js"><link rel="prefetch" href="/assets/js/44.9d1312b3.js"><link rel="prefetch" href="/assets/js/45.e68f16da.js"><link rel="prefetch" href="/assets/js/46.20ba1095.js"><link rel="prefetch" href="/assets/js/47.37709ee2.js"><link rel="prefetch" href="/assets/js/48.d96ab555.js"><link rel="prefetch" href="/assets/js/49.59fb3a5d.js"><link rel="prefetch" href="/assets/js/5.9c269fae.js"><link rel="prefetch" href="/assets/js/50.dd2320c1.js"><link rel="prefetch" href="/assets/js/51.99326924.js"><link rel="prefetch" href="/assets/js/52.2f8bdcae.js"><link rel="prefetch" href="/assets/js/53.b65c9b3b.js"><link rel="prefetch" href="/assets/js/54.8f1c1e12.js"><link rel="prefetch" href="/assets/js/55.abe1f4b6.js"><link rel="prefetch" href="/assets/js/56.1b79c9a4.js"><link rel="prefetch" href="/assets/js/57.97bf7386.js"><link rel="prefetch" href="/assets/js/58.eab2d512.js"><link rel="prefetch" href="/assets/js/59.dc4064e5.js"><link rel="prefetch" href="/assets/js/6.530b08db.js"><link rel="prefetch" href="/assets/js/60.6c9bd626.js"><link rel="prefetch" href="/assets/js/61.7d3b7f84.js"><link rel="prefetch" href="/assets/js/62.0a97fcb0.js"><link rel="prefetch" href="/assets/js/63.15d50454.js"><link rel="prefetch" href="/assets/js/64.9fe77f7e.js"><link rel="prefetch" href="/assets/js/65.d0f3dc77.js"><link rel="prefetch" href="/assets/js/66.75f6f323.js"><link rel="prefetch" href="/assets/js/67.997e57cb.js"><link rel="prefetch" href="/assets/js/68.c627100e.js"><link rel="prefetch" href="/assets/js/69.1757e396.js"><link rel="prefetch" href="/assets/js/7.393450db.js"><link rel="prefetch" href="/assets/js/70.4fead485.js"><link rel="prefetch" href="/assets/js/71.9d601385.js"><link rel="prefetch" href="/assets/js/72.df61f604.js"><link rel="prefetch" href="/assets/js/73.1ba6adec.js"><link rel="prefetch" href="/assets/js/74.dae5c946.js"><link rel="prefetch" href="/assets/js/75.ed1750af.js"><link rel="prefetch" href="/assets/js/76.23271b77.js"><link rel="prefetch" href="/assets/js/77.8f47131e.js"><link rel="prefetch" href="/assets/js/78.49a99228.js"><link rel="prefetch" href="/assets/js/79.66c05d68.js"><link rel="prefetch" href="/assets/js/8.afe1cb0f.js"><link rel="prefetch" href="/assets/js/80.14ebffb1.js"><link rel="prefetch" href="/assets/js/81.f69d7b2b.js"><link rel="prefetch" href="/assets/js/82.79ac4d75.js"><link rel="prefetch" href="/assets/js/83.5551e100.js"><link rel="prefetch" href="/assets/js/84.9d9dd0e5.js"><link rel="prefetch" href="/assets/js/85.41e7de0a.js"><link rel="prefetch" href="/assets/js/86.5ada016f.js"><link rel="prefetch" href="/assets/js/87.5cf495b9.js"><link rel="prefetch" href="/assets/js/88.2ac2cd3b.js"><link rel="prefetch" href="/assets/js/89.7816c1f3.js"><link rel="prefetch" href="/assets/js/9.828672e1.js"><link rel="prefetch" href="/assets/js/90.c5ba453d.js"><link rel="prefetch" href="/assets/js/91.257808f3.js"><link rel="prefetch" href="/assets/js/92.0425b893.js"><link rel="prefetch" href="/assets/js/93.caafd925.js"><link rel="prefetch" href="/assets/js/94.190ec2a0.js"><link rel="prefetch" href="/assets/js/95.3fbee9bb.js"><link rel="prefetch" href="/assets/js/96.ced1da5b.js"><link rel="prefetch" href="/assets/js/97.b518b74f.js"><link rel="prefetch" href="/assets/js/98.09a32c0b.js"><link rel="prefetch" href="/assets/js/99.503bd021.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.77284882.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="wrapper" data-v-586e078c><header class="header-right flex" data-v-6f1c53dc data-v-586e078c><div class="flex" data-v-6f1c53dc><div class="sidebar-button" data-v-6f1c53dc><svg width="25px" height="20px" viewBox="0 0 25 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="icon"><title>Hamburger menu button</title> <g transform="translate(-22.000000, -2.000000)"><g transform="translate(22.000000, 2.545974)"><path d="M24.7714844,0.5 L0,0.5"></path> <path d="M24.7714844,9.72701303 L0,9.72701303"></path> <path d="M24.7714844,18.9540261 L0,18.9540261"></path></g></g></svg> <a href="/" class="home-link router-link-active"><span class="site-name">Smilo</span></a></div> <a href="/" class="router-link-active" data-v-6f1c53dc><img src="/assets/img/ethereum-logo-wireframe.8c2f2894.png" alt="Smilo Logo" class="header-logo sm-hide" data-v-6f1c53dc></a> <nav class="nav-links sm-hide" data-v-6f1c53dc><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">Smilo</a></li><li class="nav-item"><a href="/beginners/" class="nav-link">Beginners</a></li><li class="nav-item"><a href="/use/" class="nav-link">Use</a></li><li class="nav-item"><a href="/learn/" class="nav-link">Learn</a></li><li class="nav-item"><a href="/developers/" class="nav-link">Developers</a></li> <!----></ul></nav></div> <div class="menu inline flex flex-center" data-v-6f1c53dc><div class="search-box" data-v-6f1c53dc><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <a href="https://github.com/smilofoundation/smilo-foundation-website" target="_blank" title="Fork This Page (Github)" data-v-6f1c53dc><img alt="Github" src="/assets/img/icon-github.3720c649.svg" class="hide-dark" data-v-6f1c53dc> <img alt="Github" src="/assets/img/icon-github-white.e05d488b.svg" class="show-dark" data-v-6f1c53dc></a> <span class="pointer view-mode" data-v-6f1c53dc><img alt="Switch to Dark Mode" src="/assets/img/icon-sun.f0087fa4.svg" class="hide-dark" data-v-6f1c53dc> <img alt="Switch to Light Mode" src="/assets/img/icon-moon.0d522939.svg" class="show-dark" data-v-6f1c53dc></span> <div class="dropdown-wrapper sm-hide" data-v-6f1c53dc><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Getting Started/Creating-A-Network-From-Scratch.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/ko/" class="nav-link">Korean</a></li></ul></div></div></header> <!----> <main class="page" data-v-586e078c><div class="content__default" data-v-586e078c><h1 id="creating-a-network-from-scratch"><a href="#creating-a-network-from-scratch" aria-hidden="true" class="header-anchor">↳</a> Creating a network from scratch</h1> <p>This section details easy to follow step by step instructions of how to setup one or more Smilo nodes from scratch for all new starters.</p> <p>Let's go through step by step instructions to setup a Smilo node with Raft consensus.</p> <h2 id="smilo-with-raft-consensus"><a href="#smilo-with-raft-consensus" aria-hidden="true" class="header-anchor">↳</a> Smilo with Raft consensus</h2> <ol><li><p>On each machine build Smilo as described in the <a href="../Installing">Installing</a> section. Ensure that PATH contains geth and bootnode</p> <div class="language- extra-class"><pre class="language-text"><code>$ git clone https://github.com/smilofoundation/Smilo.git
+$ cd Smilo
+$ make all
+$ export PATH=$(pwd)/build/bin:$PATH
+</code></pre></div></li> <li><p>Create a working directory which will be the base for the new node(s) and change into it</p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir fromscratch
+$ cd fromscratch
+$ mkdir new-node-1
+</code></pre></div></li> <li><p>Generate one or more accounts for this node and take down the account address. A funded account may be required depending what you are trying to accomplish</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth --datadir new-node-1 account new
+ INFO [06-07|14:52:18.742] Maximum peer count                       ETH=25 LES=0 total=25
+ Your new account is locked with a password. Please give a password. Do not forget this password.
+ Passphrase: 
+ Repeat passphrase: 
+ Address: {679fed8f4f3ea421689136b25073c6da7973418f}
+ Please note the keystore file generated inside new-node-1 includes the address in the last part of its filename.
+ $ ls new-node-1/keystore
+ UTC--2019-06-17T09-29-06.665107000Z--679fed8f4f3ea421689136b25073c6da7973418f
+</code></pre></div><p>!!! note
+You could generate multiple accounts for a single node, or any number of accounts for additional nodes and pre-allocate them with funds in the genesis.json file (see below)</p></li> <li><p>Create a <code>genesis.json</code> file see example <a href="../genesis">here</a>. The <code>alloc</code> field should be pre-populated with the account you generated at previous step</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim genesis.json
+... alloc holds 'optional' accounts with a pre-funded amounts. In this example we are funding the accounts 679fed8f4f3ea421689136b25073c6da7973418f (generated from the step above) and c5c7b431e1629fb992eb18a79559f667228cd055.
+{
+  &quot;alloc&quot;: {
+    &quot;0x679fed8f4f3ea421689136b25073c6da7973418f&quot;: {
+      &quot;balance&quot;: &quot;1000000000000000000000000000&quot;
+    },
+   &quot;0xc5c7b431e1629fb992eb18a79559f667228cd055&quot;: {
+      &quot;balance&quot;: &quot;2000000000000000000000000000&quot;
+    }
+},
+ &quot;coinbase&quot;: &quot;0x0000000000000000000000000000000000000000&quot;,
+ &quot;config&quot;: {
+   &quot;homesteadBlock&quot;: 0,
+   &quot;byzantiumBlock&quot;: 0,
+   &quot;constantinopleBlock&quot;: 0,
+   &quot;chainId&quot;: 10,
+   &quot;eip150Block&quot;: 0,
+   &quot;eip155Block&quot;: 0,
+   &quot;eip150Hash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+   &quot;eip158Block&quot;: 0,
+   &quot;maxCodeSize&quot;: 35,
+   &quot;maxCodeSizeChangeBlock&quot; : 0,
+   &quot;isQuorum&quot;: true
+ },
+ &quot;difficulty&quot;: &quot;0x0&quot;,
+ &quot;extraData&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+ &quot;gasLimit&quot;: &quot;0xE0000000&quot;,
+ &quot;mixhash&quot;: &quot;0x00000000000000000000000000000000000000647572616c65787365646c6578&quot;,
+ &quot;nonce&quot;: &quot;0x0&quot;,
+ &quot;parentHash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+ &quot;timestamp&quot;: &quot;0x00&quot;
+}   
+</code></pre></div></li> <li><p>Generate node key and copy it into datadir</p> <div class="language- extra-class"><pre class="language-text"><code>$ bootnode --genkey=nodekey
+$ cp nodekey new-node-1/
+</code></pre></div></li> <li><p>Execute below command to display enode id of the new node</p> <div class="language- extra-class"><pre class="language-text"><code>$ bootnode --nodekey=new-node-1/nodekey --writeaddress &gt; new-node-1/enode
+$ cat new-node-1/enode  
+'70399c3d1654c959a02b73acbdd4770109e39573a27a9b52bd391e5f79b91a42d8f2b9e982959402a97d2cbcb5656d778ba8661ec97909abc72e7bb04392ebd8'
+</code></pre></div></li> <li><p>Create a file called <code>static-nodes.json</code> and edit it to match this <a href="../permissioned-nodes">example</a>. Your file should contain a single line for your node with your enode's id and the ports you are going to use for devp2p and raft. Ensure that this file is in your nodes data directory</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim static-nodes.json
+.... paste below lines with enode generated in previous step, port 21000;IP 127.0.0.1 and raft port set as 50000
+[
+  &quot;enode://70399c3d1654c959a02b73acbdd4770109e39573a27a9b52bd391e5f79b91a42d8f2b9e982959402a97d2cbcb5656d778ba8661ec97909abc72e7bb04392ebd8@127.0.0.1:21000?discport=0&amp;raftport=50000&quot;
+] 
+$ cp static-nodes.json new-node-1
+</code></pre></div></li> <li><p>Initialize new node with below command.</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth --datadir new-node-1 init genesis.json
+INFO [06-07|15:45:17.508] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-07|15:45:17.516] Allocated cache and file handles         database=/Users/krish/new-node-1/geth/chaindata cache=16 handles=16
+INFO [06-07|15:45:17.524] Writing custom genesis block 
+INFO [06-07|15:45:17.524] Persisted trie from memory database      nodes=1 size=152.00B time=75.344µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-07|15:45:17.525] Successfully wrote genesis state         database=chaindata                              hash=ec0542…9665bf
+INFO [06-07|15:45:17.525] Allocated cache and file handles         database=/Users/krish/new-node-1/geth/lightchaindata cache=16 handles=16
+INFO [06-07|15:45:17.527] Writing custom genesis block 
+INFO [06-07|15:45:17.527] Persisted trie from memory database      nodes=1 size=152.00B time=60.76µs  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-07|15:45:17.527] Successfully wrote genesis state         database=lightchaindata                              hash=ec0542…9665bf
+</code></pre></div></li> <li><p>Start your node by first creating a script as below and then starting it:</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim startnode1.sh
+... paste below commands. It will start it in the background.
+#!/bin/bash
+PRIVATE_CONFIG=ignore nohup geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,raft --emitcheckpoints --port 21000 &gt;&gt; node.log 2&gt;&amp;1 &amp;
+$ chmod +x startnode1.sh 
+$ ./startnode1.sh
+</code></pre></div><p>!!! note
+This configuration starts Smilo without privacy support as could be evidenced in prefix <code>PRIVATE_CONFIG=ignore</code>, please see below sections on <a href="#adding-privacy-transaction-manager">how to enable privacy with privacy transaction managers</a>.</p> <p>Your node is now operational and you may attach to it with below commands.</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth attach new-node-1/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xedf53f5bf40c99f48df184441137659aed899c48
+at block: 0 (Thu, 01 Jan 1970 01:00:00 BST)
+ datadir: /Users/krish/fromscratch/new-node-1
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 raft:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; raft.cluster
+[{
+    ip: &quot;127.0.0.1&quot;,
+    nodeId: &quot;a5596803caebdc9c5326e1a0775563ad8e4aa14aa3530f0ae16d3fd8d7e48bc0b81342064e22094ab5d10303ab5721650af561f2bcdc54d705f8b6a8c07c94c3&quot;,
+    p2pPort: 21000,
+    raftId: 1,
+    raftPort: 50000
+}]
+&gt; raft.leader
+&quot;a5596803caebdc9c5326e1a0775563ad8e4aa14aa3530f0ae16d3fd8d7e48bc0b81342064e22094ab5d10303ab5721650af561f2bcdc54d705f8b6a8c07c94c3&quot;
+&gt; raft.role
+&quot;minter&quot;
+&gt; 
+&gt; exit
+</code></pre></div></li></ol> <h3 id="adding-additional-node"><a href="#adding-additional-node" aria-hidden="true" class="header-anchor">↳</a> Adding additional node</h3> <ol><li><p>Complete steps 1, 2, 5, and 6 from the previous guide</p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir new-node-2
+$ bootnode --genkey=nodekey2
+$ cp nodekey2 new-node-2/nodekey
+$ bootnode --nodekey=new-node-2/nodekey --writeaddress
+56e81550db3ccbfb5eb69c0cfe3f4a7135c931a1bae79ea69a1a1c6092cdcbea4c76a556c3af977756f95d8bf9d7b38ab50ae070da390d3abb3d7e773099c1a9
+</code></pre></div></li> <li><p>Retrieve current chains <code>genesis.json</code> and <code>static-nodes.json</code>. <code>static-nodes.json</code> should be placed into new nodes data dir</p> <div class="language- extra-class"><pre class="language-text"><code>$ cp static-nodes.json new-node-2    
+</code></pre></div></li> <li><p>Edit <code>static-nodes.json</code> and add new entry for the new node you are configuring (should be last)</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim new-node-2/static-nodes.json 
+.... append new-node-2's enode generated in step 1, port 21001;IP 127.0.0.1 and raft port set as 50001
+[
+  &quot;enode://70399c3d1654c959a02b73acbdd4770109e39573a27a9b52bd391e5f79b91a42d8f2b9e982959402a97d2cbcb5656d778ba8661ec97909abc72e7bb04392ebd8@127.0.0.1:21000?discport=0&amp;raftport=50000&quot;,
+  &quot;enode://56e81550db3ccbfb5eb69c0cfe3f4a7135c931a1bae79ea69a1a1c6092cdcbea4c76a556c3af977756f95d8bf9d7b38ab50ae070da390d3abb3d7e773099c1a9@127.0.0.1:21001?discport=0&amp;raftport=50001&quot;
+]
+</code></pre></div></li> <li><p>Initialize new node as given below:</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth --datadir new-node-2 init genesis.json
+INFO [06-07|16:34:39.805] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-07|16:34:39.814] Allocated cache and file handles         database=/Users/krish/fromscratch/new-node-2/geth/chaindata cache=16 handles=16
+INFO [06-07|16:34:39.816] Writing custom genesis block 
+INFO [06-07|16:34:39.817] Persisted trie from memory database      nodes=1 size=152.00B time=59.548µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-07|16:34:39.817] Successfully wrote genesis state         database=chaindata                                          hash=f02d0b…ed214a
+INFO [06-07|16:34:39.817] Allocated cache and file handles         database=/Users/krish/fromscratch/new-node-2/geth/lightchaindata cache=16 handles=16
+INFO [06-07|16:34:39.819] Writing custom genesis block 
+INFO [06-07|16:34:39.819] Persisted trie from memory database      nodes=1 size=152.00B time=43.733µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-07|16:34:39.819] Successfully wrote genesis state         database=lightchaindata                                          hash=f02d0b…ed214a
+</code></pre></div></li> <li><p>Connect to an already running node of the chain and execute raft <code>addPeer</code> command.</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth attach new-node-1/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xedf53f5bf40c99f48df184441137659aed899c48
+at block: 0 (Thu, 01 Jan 1970 01:00:00 BST)
+ datadir: /Users/krish/fromscratch/new-node-1
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 raft:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; raft.addPeer('enode://56e81550db3ccbfb5eb69c0cfe3f4a7135c931a1bae79ea69a1a1c6092cdcbea4c76a556c3af977756f95d8bf9d7b38ab50ae070da390d3abb3d7e773099c1a9@127.0.0.1:21001?discport=0&amp;raftport=50001')
+2
+&gt; raft.cluster
+[{
+    ip: &quot;127.0.0.1&quot;,
+    nodeId: &quot;56e81550db3ccbfb5eb69c0cfe3f4a7135c931a1bae79ea69a1a1c6092cdcbea4c76a556c3af977756f95d8bf9d7b38ab50ae070da390d3abb3d7e773099c1a9&quot;,
+    p2pPort: 21001,
+    raftId: 2,
+    raftPort: 50001
+}, {
+    ip: &quot;127.0.0.1&quot;,
+    nodeId: &quot;70399c3d1654c959a02b73acbdd4770109e39573a27a9b52bd391e5f79b91a42d8f2b9e982959402a97d2cbcb5656d778ba8661ec97909abc72e7bb04392ebd8&quot;,
+    p2pPort: 21000,
+    raftId: 1,
+    raftPort: 50000
+}]
+&gt; exit
+</code></pre></div></li> <li><p>Start your node by first creating a script as previous step and changing the ports you are going to use for Devp2p and raft.</p> <div class="language- extra-class"><pre class="language-text"><code>$ cp startnode1.sh startnode2.sh
+$ vim startnode2.sh
+..... paste below details
+#!/bin/bash
+PRIVATE_CONFIG=ignore nohup geth --datadir new-node-2 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50001 --raftjoinexisting 2 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,raft --emitcheckpoints --port 21001 2&gt;&gt;node2.log &amp;
+$ ./startnode2.sh 
+</code></pre></div></li> <li><p>Optional: share new <code>static-nodes.json</code> with all other chain participants</p> <div class="language- extra-class"><pre class="language-text"><code>$ cp new-node-2/static-nodes.json new-node-1
+</code></pre></div><p>Your additional node is now operational and is part of the same chain as the previously set up node.</p></li></ol> <h3 id="removing-node"><a href="#removing-node" aria-hidden="true" class="header-anchor">↳</a> Removing node</h3> <ol><li>Connect to an already running node of the chain and execute <code>raft.cluster</code> and get the <code>RAFT_ID</code> corresponding to the node that needs to be removed</li> <li>Run <code>raft.removePeer(RAFT_ID)</code></li> <li>Stop the <code>geth</code> process corresponding to the node that was removed.<div class="language- extra-class"><pre class="language-text"><code>$ geth attach new-node-1/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xedf53f5bf40c99f48df184441137659aed899c48
+at block: 0 (Thu, 01 Jan 1970 01:00:00 BST)
+ datadir: /Users/krish/fromscratch/new-node-1
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 raft:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; raft.cluster
+[{
+    ip: &quot;127.0.0.1&quot;,
+    nodeId: &quot;56e81550db3ccbfb5eb69c0cfe3f4a7135c931a1bae79ea69a1a1c6092cdcbea4c76a556c3af977756f95d8bf9d7b38ab50ae070da390d3abb3d7e773099c1a9&quot;,
+    p2pPort: 21001,
+    raftId: 2,
+    raftPort: 50001
+}, {
+    ip: &quot;127.0.0.1&quot;,
+    nodeId: &quot;a5596803caebdc9c5326e1a0775563ad8e4aa14aa3530f0ae16d3fd8d7e48bc0b81342064e22094ab5d10303ab5721650af561f2bcdc54d705f8b6a8c07c94c3&quot;,
+    p2pPort: 21000,
+    raftId: 1,
+    raftPort: 50000
+}]
+&gt; 
+&gt; raft.removePeer(2)
+null
+&gt; raft.cluster
+[{
+    ip: &quot;127.0.0.1&quot;,
+    nodeId: &quot;a5596803caebdc9c5326e1a0775563ad8e4aa14aa3530f0ae16d3fd8d7e48bc0b81342064e22094ab5d10303ab5721650af561f2bcdc54d705f8b6a8c07c94c3&quot;,
+    p2pPort: 21000,
+    raftId: 1,
+    raftPort: 50000
+}]
+&gt; exit
+$
+$
+$ ps | grep geth
+  PID TTY           TIME CMD
+10554 ttys000    0:00.01 -bash
+ 9125 ttys002    0:00.50 -bash
+10695 ttys002    0:31.42 geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpoo
+10750 ttys002    0:01.94 geth --datadir new-node-2 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50001 --raftjoinexisting 2 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,db,eth,debu
+$ kill 10750
+$
+$
+$ ps
+  PID TTY           TIME CMD
+10554 ttys000    0:00.01 -bash
+ 9125 ttys002    0:00.51 -bash
+10695 ttys002    0:31.76 geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpoo
+</code></pre></div></li></ol> <h2 id="smilo-with-istanbul-bft-consensus"><a href="#smilo-with-istanbul-bft-consensus" aria-hidden="true" class="header-anchor">↳</a> Smilo with Istanbul BFT consensus</h2> <ol><li><p>On each machine build Smilo as described in the <a href="../Installing">Installing</a> section. Ensure that PATH contains geth and boot node</p> <div class="language- extra-class"><pre class="language-text"><code>$ git clone https://github.com/smilofoundation/Smilo.git
+$ cd Smilo
+$ make all
+$ export PATH=$(pwd)/build/bin:$PATH
+</code></pre></div></li> <li><p>Install <a href="https://github.com/smilofoundation/istanbul-tools" target="_blank" rel="noopener noreferrer">istanbul-tools<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir fromscratchistanbul
+$ cd fromscratchistanbul
+$ git clone https://github.com/smilofoundation/istanbul-tools.git
+$ cd istanbul-tools
+$ make
+</code></pre></div></li> <li><p>Create a working directory for each of the X number of initial validator nodes</p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir node0 node1 node2 node3 node4
+</code></pre></div></li> <li><p>Change into the lead (whichever one you consider first) node's working directory and generate the setup files for X initial validator nodes by executing <code>istanbul setup --num X --nodes --Smilo --save --verbose</code> <strong>only execute this instruction once, i.e. not X times</strong>. This command will generate several items of interest: <code>static-nodes.json</code>, <code>genesis.json</code>, and nodekeys for all the initial validator nodes which will sit in numbered directories from 0 to X-1</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd node0
+$ ../istanbul-tools/build/bin/istanbul setup --num 5 --nodes --Smilo --save --verbose
+validators
+{
+	&quot;Address&quot;: &quot;0x4c1ccd426833b9782729a212c857f2f03b7b4c0d&quot;,
+	&quot;Nodekey&quot;: &quot;fe2725c4e8f7617764b845e8d939a65c664e7956eb47ed7d934573f16488efc1&quot;,
+	&quot;NodeInfo&quot;: &quot;enode://dd333ec28f0a8910c92eb4d336461eea1c20803eed9cf2c056557f986e720f8e693605bba2f4e8f289b1162e5ac7c80c914c7178130711e393ca76abc1d92f57@0.0.0.0:30303?discport=0&quot;
+}
+{
+	&quot;Address&quot;: &quot;0x189d23d201b03ae1cf9113672df29a5d672aefa3&quot;,
+	&quot;Nodekey&quot;: &quot;3434f9efd184f2255f8acc9f4408a5068bd5ae920548044087578ab97ef22f3a&quot;,
+	&quot;NodeInfo&quot;: &quot;enode://1bb6be462f27e56f901c3fcb2d53a9273565f48e5d354c08f0c044405b29291b405b9f5aa027f3a75f9b058cb43e2f54719f15316979a0e5a2b760fff4631998@0.0.0.0:30303?discport=0&quot;
+}
+{
+	&quot;Address&quot;: &quot;0x44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6&quot;,
+	&quot;Nodekey&quot;: &quot;8183051c9976200d245c59a80ae004f20c3f66e1aa1b8f17458931de91576e05&quot;,
+	&quot;NodeInfo&quot;: &quot;enode://0df02e94a3befc0683780d898119d3b675e5942c1a2f9ad47d35b4e6ccaf395cd71ec089fcf1d616748bf9871f91e5e3d29c1cf6f8f81de1b279082a104f619d@0.0.0.0:30303?discport=0&quot;
+}
+{
+	&quot;Address&quot;: &quot;0xc1056df7c02b6f1a353052eaf0533cc7cb743b52&quot;,
+	&quot;Nodekey&quot;: &quot;de415c5dbbb9ff0a34dbd3bf871ee41b230f431925e1f4cc1dd225ef47cc066f&quot;,
+	&quot;NodeInfo&quot;: &quot;enode://3fe0ff0dd2730eaac7b6b379bdb51215b5831f4f48fa54a24a0298ad5ba8c2a332442948d53f4cd4fd28f373089a35e806ef722eb045659910f96a1278120516@0.0.0.0:30303?discport=0&quot;
+}
+{
+	&quot;Address&quot;: &quot;0x7ae555d0f6faad7930434abdaac2274fd86ab516&quot;,
+	&quot;Nodekey&quot;: &quot;768b87473ba96fcfa272f958fc95a3cefdf9aa82110cde6f2f34aa5855eb39db&quot;,
+	&quot;NodeInfo&quot;: &quot;enode://e53e92e5a51ac2685b0406d0d3c62288b53831c3b0f492b9dc4bc40334783702cfa74c49b836efa2761edde33a3282704273b2453537b855e7a4aeadcccdb43e@0.0.0.0:30303?discport=0&quot;
+}
+static-nodes.json
+[
+	&quot;enode://dd333ec28f0a8910c92eb4d336461eea1c20803eed9cf2c056557f986e720f8e693605bba2f4e8f289b1162e5ac7c80c914c7178130711e393ca76abc1d92f57@0.0.0.0:30303?discport=0&quot;,
+	&quot;enode://1bb6be462f27e56f901c3fcb2d53a9273565f48e5d354c08f0c044405b29291b405b9f5aa027f3a75f9b058cb43e2f54719f15316979a0e5a2b760fff4631998@0.0.0.0:30303?discport=0&quot;,
+	&quot;enode://0df02e94a3befc0683780d898119d3b675e5942c1a2f9ad47d35b4e6ccaf395cd71ec089fcf1d616748bf9871f91e5e3d29c1cf6f8f81de1b279082a104f619d@0.0.0.0:30303?discport=0&quot;,
+	&quot;enode://3fe0ff0dd2730eaac7b6b379bdb51215b5831f4f48fa54a24a0298ad5ba8c2a332442948d53f4cd4fd28f373089a35e806ef722eb045659910f96a1278120516@0.0.0.0:30303?discport=0&quot;,
+	&quot;enode://e53e92e5a51ac2685b0406d0d3c62288b53831c3b0f492b9dc4bc40334783702cfa74c49b836efa2761edde33a3282704273b2453537b855e7a4aeadcccdb43e@0.0.0.0:30303?discport=0&quot;
+]
+genesis.json
+{
+    &quot;config&quot;: {
+        &quot;chainId&quot;: 10,
+        &quot;eip150Block&quot;: 1,
+        &quot;eip150Hash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+        &quot;eip155Block&quot;: 1,
+        &quot;eip158Block&quot;: 1,
+        &quot;byzantiumBlock&quot;: 1,
+        &quot;istanbul&quot;: {
+            &quot;epoch&quot;: 30000,
+            &quot;policy&quot;: 0
+        },
+        &quot;isQuorum&quot;: true
+    },
+    &quot;nonce&quot;: &quot;0x0&quot;,
+    &quot;timestamp&quot;: &quot;0x5cffc201&quot;,
+    &quot;extraData&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000f8aff869944c1ccd426833b9782729a212c857f2f03b7b4c0d94189d23d201b03ae1cf9113672df29a5d672aefa39444b07d2c28b8ed8f02b45bd84ac7d9051b3349e694c1056df7c02b6f1a353052eaf0533cc7cb743b52947ae555d0f6faad7930434abdaac2274fd86ab516b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0&quot;,
+    &quot;gasLimit&quot;: &quot;0xe0000000&quot;,
+    &quot;difficulty&quot;: &quot;0x1&quot;,
+    &quot;mixHash&quot;: &quot;0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365&quot;,
+    &quot;coinbase&quot;: &quot;0x0000000000000000000000000000000000000000&quot;,
+    &quot;alloc&quot;: {
+        &quot;189d23d201b03ae1cf9113672df29a5d672aefa3&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        },
+        &quot;44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        },
+        &quot;4c1ccd426833b9782729a212c857f2f03b7b4c0d&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        },
+        &quot;7ae555d0f6faad7930434abdaac2274fd86ab516&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        },
+        &quot;c1056df7c02b6f1a353052eaf0533cc7cb743b52&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        }
+    },
+    &quot;number&quot;: &quot;0x0&quot;,
+    &quot;gasUsed&quot;: &quot;0x0&quot;,
+    &quot;parentHash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;
+}
+$ ls -l
+ total 16
+ drwxr-xr-x  9 krish  staff   288 11 Jun 16:00 .
+ drwxr-xr-x  8 krish  staff   256 11 Jun 15:58 ..
+ drwxr-xr-x  3 krish  staff    96 11 Jun 16:00 0
+ drwxr-xr-x  3 krish  staff    96 11 Jun 16:00 1
+ drwxr-xr-x  3 krish  staff    96 11 Jun 16:00 2
+ drwxr-xr-x  3 krish  staff    96 11 Jun 16:00 3
+ drwxr-xr-x  3 krish  staff    96 11 Jun 16:00 4
+ -rwxr-xr-x  1 krish  staff  1878 11 Jun 16:00 genesis.json
+ -rwxr-xr-x  1 krish  staff   832 11 Jun 16:00 static-nodes.json
+</code></pre></div></li> <li><p>Update <code>static-nodes.json</code> to include the intended IP and port numbers of all initial validator nodes. In <code>static-nodes.json</code>, you will see a different row for each node. For the rest of the installation guide, row Y refers to node Y and row 1 is assumed to correspond to the lead node</p> <div class="language- extra-class"><pre class="language-text"><code>$ cat static-nodes.json
+.... update the IP and port numbers as give below...
+[
+	&quot;enode://dd333ec28f0a8910c92eb4d336461eea1c20803eed9cf2c056557f986e720f8e693605bba2f4e8f289b1162e5ac7c80c914c7178130711e393ca76abc1d92f57@127.0.0.1:30300?discport=0&quot;,
+	&quot;enode://1bb6be462f27e56f901c3fcb2d53a9273565f48e5d354c08f0c044405b29291b405b9f5aa027f3a75f9b058cb43e2f54719f15316979a0e5a2b760fff4631998@127.0.0.1:30301?discport=0&quot;,
+	&quot;enode://0df02e94a3befc0683780d898119d3b675e5942c1a2f9ad47d35b4e6ccaf395cd71ec089fcf1d616748bf9871f91e5e3d29c1cf6f8f81de1b279082a104f619d@127.0.0.1:30302?discport=0&quot;,
+	&quot;enode://3fe0ff0dd2730eaac7b6b379bdb51215b5831f4f48fa54a24a0298ad5ba8c2a332442948d53f4cd4fd28f373089a35e806ef722eb045659910f96a1278120516@127.0.0.1:30303?discport=0&quot;,
+	&quot;enode://e53e92e5a51ac2685b0406d0d3c62288b53831c3b0f492b9dc4bc40334783702cfa74c49b836efa2761edde33a3282704273b2453537b855e7a4aeadcccdb43e@127.0.0.1:30304?discport=0&quot;
+]
+</code></pre></div></li> <li><p>In each node's working directory, create a data directory called <code>data</code>, and inside <code>data</code> create the <code>geth</code> directory</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd ..
+$ mkdir -p node0/data/geth
+$ mkdir -p node1/data/geth
+$ mkdir -p node2/data/geth
+$ mkdir -p node3/data/geth
+$ mkdir -p node4/data/geth
+</code></pre></div></li> <li><p>Now we will generate initial accounts for any of the nodes in the required node's working directory. The resulting public account address printed in the terminal should be recorded. Repeat as many times as necessary. A set of funded accounts may be required depending what you are trying to accomplish</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth --datadir node0/data account new
+INFO [06-11|16:05:53.672] Maximum peer count                       ETH=25 LES=0 total=25
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase: 
+Repeat passphrase: 
+Address: {8fc817d90f179b0b627c2ecbcc1d1b0fcd13ddbd}
+$ geth --datadir node1/data account new
+INFO [06-11|16:06:34.529] Maximum peer count                       ETH=25 LES=0 total=25
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase: 
+Repeat passphrase: 
+Address: {dce8adeef16a45d94be5e7804df6d35db834d94a}
+$ geth --datadir node2/data account new
+INFO [06-11|16:06:54.365] Maximum peer count                       ETH=25 LES=0 total=25
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase: 
+Repeat passphrase: 
+Address: {65a3ab6d4cf23395f544833831fc5d42a0b2b43a}
+</code></pre></div></li> <li><p>To add accounts to the initial block, edit the <code>genesis.json</code> file in the lead node's working directory and update the <code>alloc</code> field with the account(s) that were generated at previous step</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim node0/genesis.json
+.... update the accounts under 'alloc'
+{
+    &quot;config&quot;: {
+        &quot;chainId&quot;: 10,
+        &quot;eip150Block&quot;: 1,
+        &quot;eip150Hash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+        &quot;eip155Block&quot;: 1,
+        &quot;eip158Block&quot;: 1,
+        &quot;byzantiumBlock&quot;: 1,
+        &quot;istanbul&quot;: {
+            &quot;epoch&quot;: 30000,
+            &quot;policy&quot;: 0
+        },
+        &quot;isQuorum&quot;: true
+    },
+    &quot;nonce&quot;: &quot;0x0&quot;,
+    &quot;timestamp&quot;: &quot;0x5cffc201&quot;,
+    &quot;extraData&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000f8aff869944c1ccd426833b9782729a212c857f2f03b7b4c0d94189d23d201b03ae1cf9113672df29a5d672aefa39444b07d2c28b8ed8f02b45bd84ac7d9051b3349e694c1056df7c02b6f1a353052eaf0533cc7cb743b52947ae555d0f6faad7930434abdaac2274fd86ab516b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0&quot;,
+    &quot;gasLimit&quot;: &quot;0xe0000000&quot;,
+    &quot;difficulty&quot;: &quot;0x1&quot;,
+    &quot;mixHash&quot;: &quot;0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365&quot;,
+    &quot;coinbase&quot;: &quot;0x0000000000000000000000000000000000000000&quot;,
+    &quot;alloc&quot;: {
+        &quot;8fc817d90f179b0b627c2ecbcc1d1b0fcd13ddbd&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        },
+        &quot;dce8adeef16a45d94be5e7804df6d35db834d94a&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        },
+        &quot;65a3ab6d4cf23395f544833831fc5d42a0b2b43a&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        }
+    },
+    &quot;number&quot;: &quot;0x0&quot;,
+    &quot;gasUsed&quot;: &quot;0x0&quot;,
+    &quot;parentHash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;
+}
+</code></pre></div></li> <li><p>Next we need to distribute the files created in part 4, which currently reside in the lead node's working directory, to all other nodes. To do so, place <code>genesis.json</code> in the working directory of all nodes, place <code>static-nodes.json</code> in the data folder of each node and place <code>X/nodekey</code> in node (X-1)'s <code>data/geth</code> directory</p> <div class="language- extra-class"><pre class="language-text"><code>$ cp node0/genesis.json node1
+$ cp node0/genesis.json node2
+$ cp node0/genesis.json node3
+$ cp node0/genesis.json node4
+$ cp node0/static-nodes.json node0/data/
+$ cp node0/static-nodes.json node1/data/
+$ cp node0/static-nodes.json node2/data/
+$ cp node0/static-nodes.json node3/data/
+$ cp node0/static-nodes.json node4/data/
+$ cp node0/0/nodekey node0/data/geth
+$ cp node0/1/nodekey node1/data/geth
+$ cp node0/2/nodekey node2/data/geth
+$ cp node0/3/nodekey node3/data/geth
+$ cp node0/4/nodekey node4/data/geth
+</code></pre></div></li> <li><p>Switch into working directory of lead node and initialize it. Repeat for every working directory X created in step 3. <em>The resulting hash given by executing <code>geth init</code> must match for every node</em></p> <div class="language- extra-class"><pre class="language-text"><code>$ cd node0
+$ geth --datadir data init genesis.json
+INFO [06-11|16:14:11.883] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-11|16:14:11.894] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node0/data/geth/chaindata cache=16 handles=16
+INFO [06-11|16:14:11.896] Writing custom genesis block 
+INFO [06-11|16:14:11.897] Persisted trie from memory database      nodes=6 size=1.01kB time=76.665µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:11.897] Successfully wrote genesis state         database=chaindata                                                  hash=b992be…533db7
+INFO [06-11|16:14:11.897] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node0/data/geth/lightchaindata cache=16 handles=16
+INFO [06-11|16:14:11.898] Writing custom genesis block 
+INFO [06-11|16:14:11.898] Persisted trie from memory database      nodes=6 size=1.01kB time=54.929µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:11.898] Successfully wrote genesis state         database=lightchaindata                                                  hash=b992be…533db7
+$
+$ cd ..
+$ cd node1
+$ geth --datadir data init genesis.json
+INFO [06-11|16:14:24.814] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-11|16:14:24.824] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node1/data/geth/chaindata cache=16 handles=16
+INFO [06-11|16:14:24.831] Writing custom genesis block 
+INFO [06-11|16:14:24.831] Persisted trie from memory database      nodes=6 size=1.01kB time=82.799µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:24.832] Successfully wrote genesis state         database=chaindata                                                  hash=b992be…533db7
+INFO [06-11|16:14:24.832] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node1/data/geth/lightchaindata cache=16 handles=16
+INFO [06-11|16:14:24.833] Writing custom genesis block 
+INFO [06-11|16:14:24.833] Persisted trie from memory database      nodes=6 size=1.01kB time=52.828µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:24.834] Successfully wrote genesis state         database=lightchaindata                                                  hash=b992be…533db7
+$
+$ cd ..
+$ cd node2
+$ geth --datadir data init genesis.json
+INFO [06-11|16:14:35.246] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-11|16:14:35.257] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node2/data/geth/chaindata cache=16 handles=16
+INFO [06-11|16:14:35.264] Writing custom genesis block 
+INFO [06-11|16:14:35.265] Persisted trie from memory database      nodes=6 size=1.01kB time=124.91µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:35.265] Successfully wrote genesis state         database=chaindata                                                  hash=b992be…533db7
+INFO [06-11|16:14:35.265] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node2/data/geth/lightchaindata cache=16 handles=16
+INFO [06-11|16:14:35.267] Writing custom genesis block 
+INFO [06-11|16:14:35.268] Persisted trie from memory database      nodes=6 size=1.01kB time=85.504µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:35.268] Successfully wrote genesis state         database=lightchaindata                                                  hash=b992be…533db7
+$ cd ../node3
+$ geth --datadir data init genesis.json
+INFO [06-11|16:14:42.168] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-11|16:14:42.178] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node3/data/geth/chaindata cache=16 handles=16
+INFO [06-11|16:14:42.186] Writing custom genesis block 
+INFO [06-11|16:14:42.186] Persisted trie from memory database      nodes=6 size=1.01kB time=124.611µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:42.187] Successfully wrote genesis state         database=chaindata                                                  hash=b992be…533db7
+INFO [06-11|16:14:42.187] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node3/data/geth/lightchaindata cache=16 handles=16
+INFO [06-11|16:14:42.189] Writing custom genesis block 
+INFO [06-11|16:14:42.189] Persisted trie from memory database      nodes=6 size=1.01kB time=80.973µs  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:42.189] Successfully wrote genesis state         database=lightchaindata                                                  hash=b992be…533db7
+$ cd ../node4
+$ geth --datadir data init genesis.json
+INFO [06-11|16:14:48.737] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-11|16:14:48.747] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node4/data/geth/chaindata cache=16 handles=16
+INFO [06-11|16:14:48.749] Writing custom genesis block 
+INFO [06-11|16:14:48.749] Persisted trie from memory database      nodes=6 size=1.01kB time=71.213µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:48.750] Successfully wrote genesis state         database=chaindata                                                  hash=b992be…533db7
+INFO [06-11|16:14:48.750] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node4/data/geth/lightchaindata cache=16 handles=16
+INFO [06-11|16:14:48.751] Writing custom genesis block 
+INFO [06-11|16:14:48.751] Persisted trie from memory database      nodes=6 size=1.01kB time=53.773µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:14:48.751] Successfully wrote genesis state         database=lightchaindata                                                  hash=b992be…533db7
+$ cd..
+</code></pre></div></li> <li><p>Start all nodes by first creating a script and running it.</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim startall.sh
+.... paste below. The port numbers should match the port number for each node decided on in step 5
+#!/bin/bash
+cd node0
+PRIVATE_CONFIG=ignore nohup geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,istanbul --emitcheckpoints --port 30300 2&gt;&gt;node.log &amp;
+cd ../node1
+PRIVATE_CONFIG=ignore nohup geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,istanbul --emitcheckpoints --port 30301 2&gt;&gt;node.log &amp;
+cd ../node2
+PRIVATE_CONFIG=ignore nohup geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22002 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,istanbul --emitcheckpoints --port 30302 2&gt;&gt;node.log &amp;
+cd ../node3
+PRIVATE_CONFIG=ignore nohup geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22003 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,istanbul --emitcheckpoints --port 30303 2&gt;&gt;node.log &amp;
+cd ../node4
+PRIVATE_CONFIG=ignore nohup geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22004 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,istanbul --emitcheckpoints --port 30304 2&gt;&gt;node.log &amp;
+$
+See if the any geth nodes are running.
+$ ps | grep geth
+Kill geth processes
+$ killall -INT geth
+$
+$ chmod +x startall.sh
+$ ./startall.sh
+$ ps
+  PID TTY           TIME CMD
+10554 ttys000    0:00.11 -bash
+21829 ttys001    0:00.03 -bash
+ 9125 ttys002    0:00.82 -bash
+36432 ttys002    0:00.19 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,
+36433 ttys002    0:00.18 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,
+36434 ttys002    0:00.19 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22002 --rpcapi admin,
+36435 ttys002    0:00.19 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22003 --rpcapi admin,
+36436 ttys002    0:00.19 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22004 --rpcapi admin,
+$ 
+</code></pre></div><p>!!! note
+This configuration starts Smilo without privacy support as could be evidenced in prefix <code>PRIVATE_CONFIG=ignore</code>, please see below sections on <a href="#adding-privacy-transaction-manager">how to enable privacy with privacy transaction managers</a>.
+Please note that istanbul-tools may be used to generate X number of nodes, more information is available in the <a href="https://github.com/smilofoundation/istanbul-tools" target="_blank" rel="noopener noreferrer">docs<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p> <p>Your node is now operational and you may attach to it with <code>geth attach node0/data/geth.ipc</code>.</p></li></ol> <h3 id="adding-additional-validator"><a href="#adding-additional-validator" aria-hidden="true" class="header-anchor">↳</a> Adding additional validator</h3> <ol><li><p>Create a working directory for the new node that needs to be added</p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir node5
+</code></pre></div></li> <li><p>Change into the working directory for the new node and run <code>istanbul setup --num 1 --verbose --Smilo --save</code>. This will generate the validator details including Address, NodeInfo and genesis.json</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd node5
+$ ../istanbul-tools/build/bin/istanbul setup --num 1 --verbose --Smilo --save
+validators
+{
+	&quot;Address&quot;: &quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,
+	&quot;Nodekey&quot;: &quot;25b47a49ef08f888c04f30417363e6c6bc33e739147b2f8b5377b3168f9f7435&quot;,
+	&quot;NodeInfo&quot;: &quot;enode://273eaf48591ce0e77c800b3e6465811d6d2f924c4dcaae016c2c7375256d17876c3e05f91839b741fe12350da0b5a741da4e30f39553fe8790f88503c64f6ef9@0.0.0.0:30303?discport=0&quot;
+}
+genesis.json
+{
+    &quot;config&quot;: {
+        &quot;chainId&quot;: 10,
+        &quot;eip150Block&quot;: 1,
+        &quot;eip150Hash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+        &quot;eip155Block&quot;: 1,
+        &quot;eip158Block&quot;: 1,
+        &quot;byzantiumBlock&quot;: 1,
+        &quot;istanbul&quot;: {
+            &quot;epoch&quot;: 30000,
+            &quot;policy&quot;: 0
+        },
+        &quot;isQuorum&quot;: true
+    },
+    &quot;nonce&quot;: &quot;0x0&quot;,
+    &quot;timestamp&quot;: &quot;0x5cffc942&quot;,
+    &quot;extraData&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000f85ad5942aabbc1bb9bacef60a09764d1a1f4f04a47885c1b8410000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0&quot;,
+    &quot;gasLimit&quot;: &quot;0xe0000000&quot;,
+    &quot;difficulty&quot;: &quot;0x1&quot;,
+    &quot;mixHash&quot;: &quot;0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365&quot;,
+    &quot;coinbase&quot;: &quot;0x0000000000000000000000000000000000000000&quot;,
+    &quot;alloc&quot;: {
+        &quot;2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;: {
+            &quot;balance&quot;: &quot;0x446c3b15f9926687d2c40534fdb564000000000000&quot;
+        }
+    },
+    &quot;number&quot;: &quot;0x0&quot;,
+    &quot;gasUsed&quot;: &quot;0x0&quot;,
+    &quot;parentHash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;
+}
+</code></pre></div></li> <li><p>Copy the address of the validator and run <code>istanbul.propose(&lt;address&gt;, true)</code> from more than half the number of current validators.</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd ..
+$ geth attach node0/data/geth.ipc
+$ geth attach node0/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0x4c1ccd426833b9782729a212c857f2f03b7b4c0d
+at block: 137 (Tue, 11 Jun 2019 16:32:47 BST)
+ datadir: /Users/krish/fromscratchistanbul/node0/data
+ modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.getValidators()
+[&quot;0x189d23d201b03ae1cf9113672df29a5d672aefa3&quot;, &quot;0x44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6&quot;, &quot;0x4c1ccd426833b9782729a212c857f2f03b7b4c0d&quot;, &quot;0x7ae555d0f6faad7930434abdaac2274fd86ab516&quot;, &quot;0xc1056df7c02b6f1a353052eaf0533cc7cb743b52&quot;]
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,true)
+null
+$
+$
+$ geth attach node1/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0x189d23d201b03ae1cf9113672df29a5d672aefa3
+at block: 176 (Tue, 11 Jun 2019 16:36:02 BST)
+ datadir: /Users/krish/fromscratchistanbul/node1/data
+ modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,true)
+null
+$
+$
+$ geth attach node2/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0x44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6
+at block: 179 (Tue, 11 Jun 2019 16:36:17 BST)
+ datadir: /Users/krish/fromscratchistanbul/node2/data
+ modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,true)
+null
+$
+$
+$ geth attach node3/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xc1056df7c02b6f1a353052eaf0533cc7cb743b52
+at block: 181 (Tue, 11 Jun 2019 16:36:27 BST)
+ datadir: /Users/krish/fromscratchistanbul/node3/data
+ modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,true)
+</code></pre></div></li> <li><p>Verify that the new validator has been added to the list of validators by running <code>istanbul.getValidators()</code></p> <div class="language- extra-class"><pre class="language-text"><code>... you can see below command now displays 6 node address as validators.
+&gt; istanbul.getValidators()
+[&quot;0x189d23d201b03ae1cf9113672df29a5d672aefa3&quot;, &quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;, &quot;0x44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6&quot;, &quot;0x4c1ccd426833b9782729a212c857f2f03b7b4c0d&quot;, &quot;0x7ae555d0f6faad7930434abdaac2274fd86ab516&quot;, &quot;0xc1056df7c02b6f1a353052eaf0533cc7cb743b52&quot;]    
+</code></pre></div></li> <li><p>Copy <code>static-nodes.json</code> and genesis.json from the existing chain. <code>static-nodes.json</code> should be placed into new nodes data dir</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd node5
+$ mkdir -p data/geth
+$ cp ../node0/static-nodes.json data
+$ cp ../node0/genesis.json .
+</code></pre></div></li> <li><p>Edit <code>static-nodes.json</code> and add the new validators node info to the end of the file. New validators node info can be got from the output of <code>istanbul setup --num 1 --verbose --Smilo --save</code> command that was run in step 2. Update the IP address and port of the node info to match the IP address of the validator and port you want to use.</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim data/static-nodes.json
+...add new validate nodes details with correct IP and port details
+[
+	&quot;enode://dd333ec28f0a8910c92eb4d336461eea1c20803eed9cf2c056557f986e720f8e693605bba2f4e8f289b1162e5ac7c80c914c7178130711e393ca76abc1d92f57@127.0.0.1:30300?discport=0&quot;,
+	&quot;enode://1bb6be462f27e56f901c3fcb2d53a9273565f48e5d354c08f0c044405b29291b405b9f5aa027f3a75f9b058cb43e2f54719f15316979a0e5a2b760fff4631998@127.0.0.1:30301?discport=0&quot;,
+	&quot;enode://0df02e94a3befc0683780d898119d3b675e5942c1a2f9ad47d35b4e6ccaf395cd71ec089fcf1d616748bf9871f91e5e3d29c1cf6f8f81de1b279082a104f619d@127.0.0.1:30302?discport=0&quot;,
+	&quot;enode://3fe0ff0dd2730eaac7b6b379bdb51215b5831f4f48fa54a24a0298ad5ba8c2a332442948d53f4cd4fd28f373089a35e806ef722eb045659910f96a1278120516@127.0.0.1:30303?discport=0&quot;,
+	&quot;enode://e53e92e5a51ac2685b0406d0d3c62288b53831c3b0f492b9dc4bc40334783702cfa74c49b836efa2761edde33a3282704273b2453537b855e7a4aeadcccdb43e@127.0.0.1:30304?discport=0&quot;,
+    &quot;enode://273eaf48591ce0e77c800b3e6465811d6d2f924c4dcaae016c2c7375256d17876c3e05f91839b741fe12350da0b5a741da4e30f39553fe8790f88503c64f6ef9@127.0.0.1:30305?discport=0&quot;
+]
+</code></pre></div></li> <li><p>Copy the nodekey that was generated by <code>istanbul setup</code> command to the <code>geth</code> directory inside the working directory</p> <div class="language- extra-class"><pre class="language-text"><code>$ cp 0/nodekey data/geth
+</code></pre></div></li> <li><p>Generate one or more accounts for this node and take down the account address.</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth --datadir data account new
+INFO [06-12|17:45:11.116] Maximum peer count                       ETH=25 LES=0 total=25
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Passphrase: 
+Repeat passphrase: 
+Address: {37922bce824bca2f3206ea53dd50d173b368b572}
+</code></pre></div></li> <li><p>Initialize new node with below command</p> <div class="language- extra-class"><pre class="language-text"><code>$ geth --datadir data init genesis.json
+INFO [06-11|16:42:27.120] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-11|16:42:27.130] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node5/data/geth/chaindata cache=16 handles=16
+INFO [06-11|16:42:27.138] Writing custom genesis block 
+INFO [06-11|16:42:27.138] Persisted trie from memory database      nodes=6 size=1.01kB time=163.024µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:42:27.139] Successfully wrote genesis state         database=chaindata                                                  hash=b992be…533db7
+INFO [06-11|16:42:27.139] Allocated cache and file handles         database=/Users/krish/fromscratchistanbul/node5/data/geth/lightchaindata cache=16 handles=16
+INFO [06-11|16:42:27.141] Writing custom genesis block 
+INFO [06-11|16:42:27.142] Persisted trie from memory database      nodes=6 size=1.01kB time=94.57µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-11|16:42:27.142] Successfully wrote genesis state         database=lightchaindata                                                  hash=b992be…533db7
+$
+</code></pre></div></li> <li><p>Start the node by first creating below script and executing it:</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd ..
+$ cp startall.sh start6.sh
+$ vim start6.sh
+... paste below and update IP and port number matching for this node decided on step 6
+#!/bin/bash
+cd node5
+PRIVATE_CONFIG=ignore nohup geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22005 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,istanbul --emitcheckpoints --port 30305 2&gt;&gt;node.log &amp;
+$
+$ ./start6.sh 
+$
+$ ps
+  PID TTY           TIME CMD
+10554 ttys000    0:00.11 -bash
+21829 ttys001    0:00.03 -bash
+ 9125 ttys002    0:00.93 -bash
+36432 ttys002    0:24.48 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,
+36433 ttys002    0:23.36 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,
+36434 ttys002    0:24.32 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22002 --rpcapi admin,
+36435 ttys002    0:24.21 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22003 --rpcapi admin,
+36436 ttys002    0:24.17 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22004 --rpcapi admin,
+36485 ttys002    0:00.15 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22005 --rpcapi admin,
+36455 ttys003    0:00.04 -bash
+36467 ttys003    0:00.32 geth attach node3/data/geth.ipc
+</code></pre></div></li></ol> <h3 id="removing-validator"><a href="#removing-validator" aria-hidden="true" class="header-anchor">↳</a> Removing validator</h3> <ol><li>Attach to a running validator and run <code>istanbul.getValidators()</code> and identify the address of the validator that needs to be removed<div class="language- extra-class"><pre class="language-text"><code>$ geth attach node0/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xc1056df7c02b6f1a353052eaf0533cc7cb743b52
+at block: 181 (Tue, 11 Jun 2019 16:36:27 BST)
+ datadir: /Users/krish/fromscratchistanbul/node0/data
+ modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.getValidators()
+[&quot;0x189d23d201b03ae1cf9113672df29a5d672aefa3&quot;, &quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;, &quot;0x44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6&quot;, &quot;0x4c1ccd426833b9782729a212c857f2f03b7b4c0d&quot;, &quot;0x7ae555d0f6faad7930434abdaac2274fd86ab516&quot;, &quot;0xc1056df7c02b6f1a353052eaf0533cc7cb743b52&quot;]
+</code></pre></div></li> <li>Run <code>istanbul.propose(&lt;address&gt;, false)</code> by passing the address of the validator that needs to be removed from more than half current validators<div class="language- extra-class"><pre class="language-text"><code>&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,false)
+null
+$
+$ geth attach node1/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xc1056df7c02b6f1a353052eaf0533cc7cb743b52
+at block: 181 (Tue, 11 Jun 2019 16:36:27 BST)
+datadir: /Users/krish/fromscratchistanbul/node1/data
+modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,false)
+null
+$
+$ geth attach node2/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xc1056df7c02b6f1a353052eaf0533cc7cb743b52
+at block: 181 (Tue, 11 Jun 2019 16:36:27 BST)
+datadir: /Users/krish/fromscratchistanbul/node2/data
+modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,false)
+null 
+$
+$ geth attach node3/data/geth.ipc
+Welcome to the Geth JavaScript console!
+instance: Geth/v1.8.18-stable-bb88608c(Smilo-v2.2.3)/darwin-amd64/go1.10.2
+coinbase: 0xc1056df7c02b6f1a353052eaf0533cc7cb743b52
+at block: 181 (Tue, 11 Jun 2019 16:36:27 BST)
+datadir: /Users/krish/fromscratchistanbul/node3/data
+modules: admin:1.0 debug:1.0 eth:1.0 istanbul:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+&gt; istanbul.propose(&quot;0x2aabbc1bb9bacef60a09764d1a1f4f04a47885c1&quot;,false)
+null       
+</code></pre></div></li> <li>Verify that the validator has been removed by running <code>istanbul.getValidators()</code><div class="language- extra-class"><pre class="language-text"><code>&gt; istanbul.getValidators()
+[&quot;0x189d23d201b03ae1cf9113672df29a5d672aefa3&quot;, &quot;0x44b07d2c28b8ed8f02b45bd84ac7d9051b3349e6&quot;, &quot;0x4c1ccd426833b9782729a212c857f2f03b7b4c0d&quot;, &quot;0x7ae555d0f6faad7930434abdaac2274fd86ab516&quot;, &quot;0xc1056df7c02b6f1a353052eaf0533cc7cb743b52&quot;]
+</code></pre></div></li> <li>Stop the <code>geth</code> process corresponding to the validator that was removed.<div class="language- extra-class"><pre class="language-text"><code>$ ps
+  PID TTY           TIME CMD
+10554 ttys000    0:00.11 -bash
+21829 ttys001    0:00.03 -bash
+ 9125 ttys002    0:00.94 -bash
+36432 ttys002    0:31.93 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,
+36433 ttys002    0:30.75 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,
+36434 ttys002    0:31.72 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22002 --rpcapi admin,
+36435 ttys002    0:31.65 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22003 --rpcapi admin,
+36436 ttys002    0:31.63 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22004 --rpcapi admin,
+36485 ttys002    0:06.86 geth --datadir data --nodiscover --istanbul.blockperiod 5 --syncmode full --mine --minerthreads 1 --verbosity 5 --networkid 10 --rpc --rpcaddr 0.0.0.0 --rpcport 22005 --rpcapi admin,
+36455 ttys003    0:00.05 -bash
+36493 ttys003    0:00.22 geth attach node4/data/geth.ipc
+$ kill 36485
+</code></pre></div></li></ol> <h3 id="adding-non-validator-node"><a href="#adding-non-validator-node" aria-hidden="true" class="header-anchor">↳</a> Adding non-validator node</h3> <p>Same instructions as adding validator node <strong>excluding</strong> step 3 which proposes the node as validator.</p> <h3 id="removing-non-validator-node"><a href="#removing-non-validator-node" aria-hidden="true" class="header-anchor">↳</a> Removing non-validator node</h3> <p>Just execute <strong>step 4</strong> instruction from removing a validator node.</p> <h2 id="adding-privacy-transaction-manager"><a href="#adding-privacy-transaction-manager" aria-hidden="true" class="header-anchor">↳</a> Adding privacy transaction manager</h2> <h3 id="tessera"><a href="#tessera" aria-hidden="true" class="header-anchor">↳</a> Tessera</h3> <ol><li><p>Build Smilo and install <a href="https://github.com/smilofoundation/tessera/releases" target="_blank" rel="noopener noreferrer">Tessera<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> as described in the <a href="../Installing">Installing</a> section. Ensure that PATH contains geth and bootnode. Be aware of the location of the <code>tessera.jar</code> release file</p> <div class="language- extra-class"><pre class="language-text"><code>$ git clone https://github.com/smilofoundation/Smilo.git
+$ cd Smilo
+$ make all
+$ export PATH=$(pwd)/build/bin:$PATH
+$ cd ..
+.... copy tessera jar to your desired destination and rename it as tessera
+$ mv tessera-app-0.9.2-app.jar tessera.jar
+</code></pre></div></li> <li><p>Generate new keys using <code>java -jar /path-to-tessera/tessera.jar -keygen -filename new-node-1</code></p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir new-node-1t
+$ cd new-node-1t
+$ java -jar ../tessera.jar -keygen -filename new-node-1
+Enter a password if you want to lock the private key or leave blank
+Please re-enter the password (or lack of) to confirm
+10:32:51.256 [main] INFO  com.Smilo.tessera.nacl.jnacl.Jnacl - Generating new keypair...
+10:32:51.279 [main] INFO  com.Smilo.tessera.nacl.jnacl.Jnacl - Generated public key PublicKey[pnesVeDgs805ZPbnulzC5wokDzpdN7CeYKVUBXup/W4=] and private key REDACTED
+10:32:51.624 [main] INFO  c.q.t.k.generation.FileKeyGenerator - Saved public key to /Users/krish/fromscratch/new-node-1t/new-node-1.pub
+10:32:51.624 [main] INFO  c.q.t.k.generation.FileKeyGenerator - Saved private key to /Users/krish/fromscratch/new-node-1t/new-node-1.key
+</code></pre></div></li> <li><p>Create new configuration file with newly generated keys referenced. Name it <code>config.json</code> as done in this example</p> <div class="language- extra-class"><pre class="language-text"><code>vim config.json
+{
+   &quot;useWhiteList&quot;: false,
+   &quot;jdbc&quot;: {
+       &quot;username&quot;: &quot;sa&quot;,
+       &quot;password&quot;: &quot;&quot;,
+       &quot;url&quot;: &quot;jdbc:h2:/yourpath/new-node-1t/db1;MODE=Oracle;TRACE_LEVEL_SYSTEM_OUT=0&quot;,
+       &quot;autoCreateTables&quot;: true
+   },
+   &quot;serverConfigs&quot;:[
+       {
+           &quot;app&quot;:&quot;ThirdParty&quot;,
+           &quot;enabled&quot;: true,
+           &quot;serverAddress&quot;: &quot;http://localhost:9081&quot;,
+           &quot;communicationType&quot; : &quot;REST&quot;
+       },
+       {
+           &quot;app&quot;:&quot;Q2T&quot;,
+           &quot;enabled&quot;: true,
+            &quot;serverAddress&quot;:&quot;unix:/yourpath/new-node-1t/tm.ipc&quot;,
+           &quot;communicationType&quot; : &quot;REST&quot;
+       },
+       {
+           &quot;app&quot;:&quot;P2P&quot;,
+           &quot;enabled&quot;: true,
+           &quot;serverAddress&quot;:&quot;http://localhost:9001&quot;,
+           &quot;sslConfig&quot;: {
+               &quot;tls&quot;: &quot;OFF&quot;
+           },
+           &quot;communicationType&quot; : &quot;REST&quot;
+       }
+   ],
+   &quot;peer&quot;: [
+       {
+           &quot;url&quot;: &quot;http://localhost:9001&quot;
+       },
+       {
+           &quot;url&quot;: &quot;http://localhost:9003&quot;
+       }
+   ],
+   &quot;keys&quot;: {
+       &quot;passwords&quot;: [],
+       &quot;keyData&quot;: [
+           {
+               &quot;privateKeyPath&quot;: &quot;/yourpath/new-node-1t/new-node-1.key&quot;,
+               &quot;publicKeyPath&quot;: &quot;/yourpath/new-node-1t/new-node-1.pub&quot;
+           }
+       ]
+   },
+   &quot;alwaysSendTo&quot;: []
+}
+</code></pre></div></li> <li><p>If you want to start another Tessera node, please repeat step 2 &amp; step 3</p> <div class="language- extra-class"><pre class="language-text"><code>$ cd ..
+$ mkdir new-node-2t
+$ cd new-node-2t
+$ java -jar ../tessera.jar -keygen -filename new-node-2
+Enter a password if you want to lock the private key or leave blank
+Please re-enter the password (or lack of) to confirm
+10:45:02.567 [main] INFO  com.Smilo.tessera.nacl.jnacl.Jnacl - Generating new keypair...
+10:45:02.585 [main] INFO  com.Smilo.tessera.nacl.jnacl.Jnacl - Generated public key PublicKey[AeggpVlVsi+rxD6h9tcq/8qL/MsjyipUnkj1nvNPgTU=] and private key REDACTED
+10:45:02.926 [main] INFO  c.q.t.k.generation.FileKeyGenerator - Saved public key to /Users/krish/fromscratch/new-node-2t/new-node-2.pub
+10:45:02.926 [main] INFO  c.q.t.k.generation.FileKeyGenerator - Saved private key to /Users/krish/fromscratch/new-node-2t/new-node-2.key
+$
+$ cp ../new-node-1t/config.json .
+$ vim config.json
+.... paste below
+{
+   &quot;useWhiteList&quot;: false,
+   &quot;jdbc&quot;: {
+       &quot;username&quot;: &quot;sa&quot;,
+       &quot;password&quot;: &quot;&quot;,
+       &quot;url&quot;: &quot;jdbc:h2:yourpath/new-node-2t/db1;MODE=Oracle;TRACE_LEVEL_SYSTEM_OUT=0&quot;,
+       &quot;autoCreateTables&quot;: true
+   },
+   &quot;serverConfigs&quot;:[
+       {
+           &quot;app&quot;:&quot;ThirdParty&quot;,
+           &quot;enabled&quot;: true,
+           &quot;serverAddress&quot;: &quot;http://localhost:9083&quot;,
+           &quot;communicationType&quot; : &quot;REST&quot;
+       },
+       {
+           &quot;app&quot;:&quot;Q2T&quot;,
+           &quot;enabled&quot;: true,
+            &quot;serverAddress&quot;:&quot;unix:/yourpath/new-node-2t/tm.ipc&quot;,
+           &quot;communicationType&quot; : &quot;REST&quot;
+       },
+       {
+           &quot;app&quot;:&quot;P2P&quot;,
+           &quot;enabled&quot;: true,
+           &quot;serverAddress&quot;:&quot;http://localhost:9003&quot;,
+           &quot;sslConfig&quot;: {
+               &quot;tls&quot;: &quot;OFF&quot;
+           },
+           &quot;communicationType&quot; : &quot;REST&quot;
+       }
+   ],
+   &quot;peer&quot;: [
+       {
+           &quot;url&quot;: &quot;http://localhost:9001&quot;
+       },
+       {
+           &quot;url&quot;: &quot;http://localhost:9003&quot;
+       }
+   ],
+   &quot;keys&quot;: {
+       &quot;passwords&quot;: [],
+       &quot;keyData&quot;: [
+           {
+               &quot;privateKeyPath&quot;: &quot;/yourpath/new-node-2t/new-node-2.key&quot;,
+               &quot;publicKeyPath&quot;: &quot;/yourpath/new-node-2t/new-node-2.pub&quot;
+           }
+       ]
+   },
+   &quot;alwaysSendTo&quot;: []
+}
+</code></pre></div></li> <li><p>Start your Tessera nodes and send then into background</p> <div class="language- extra-class"><pre class="language-text"><code>$ java -jar ../tessera.jar -configfile config.json &gt;&gt; tessera.log 2&gt;&amp;1 &amp;
+[1] 38064
+$ cd ../new-node-1t
+$ java -jar ../tessera.jar -configfile config.json &gt;&gt; tessera.log 2&gt;&amp;1 &amp;
+[2] 38076
+$ ps
+  PID TTY           TIME CMD
+10554 ttys000    0:00.12 -bash
+38234 ttys000    1:15.31 /usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/mkdocs serve
+21829 ttys001    0:00.18 -bash
+ 9125 ttys002    0:01.52 -bash
+38072 ttys002    1:18.42 /usr/bin/java -jar ../tessera.jar -configfile config.json
+38076 ttys002    1:15.86 /usr/bin/java -jar ../tessera.jar -configfile config.json
+</code></pre></div></li> <li><p>Start Smilo nodes attached to running Tessera nodes from above and send it to background</p> <div class="language- extra-class"><pre class="language-text"><code>... update the start scripts to include PRIVATE_CONFIG
+$cd ..
+$vim startnode1.sh
+... paste below
+#!/bin/bash
+PRIVATE_CONFIG=/yourpath/new-node-1t/tm.ipc nohup geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,raft --emitcheckpoints --port 21000 &gt;&gt; node.log 2&gt;&amp;1 &amp;
+$vim startnode2.sh
+... paste below
+#!/bin/bash
+PRIVATE_CONFIG=/yourpath/new-node-2t/tm.ipc nohup geth --datadir new-node-2 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50001 --raftjoinexisting 2 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,raft --emitcheckpoints --port 21001 2&gt;&gt;node2.log &amp;
+$ ./startnode1.sh
+$ ./startnode2.sh
+$ ps
+  PID TTY           TIME CMD
+10554 ttys000    0:00.12 -bash
+21829 ttys001    0:00.18 -bash
+ 9125 ttys002    0:01.49 -bash
+38072 ttys002    0:48.92 /usr/bin/java -jar ../tessera.jar -configfile config.json
+38076 ttys002    0:47.60 /usr/bin/java -jar ../tessera.jar -configfile config.json
+38183 ttys002    0:08.15 geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpoo
+38204 ttys002    0:00.19 geth --datadir new-node-2 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50001 --raftjoinexisting 2 --rpc --rpcaddr 0.0.0.0 --rpcport 22001 --rpcapi admin,db,eth,debu
+36455 ttys003    0:00.15 -bash  
+</code></pre></div><p>!!! note
+Tessera IPC bridge will be over a file name defined in your <code>config.json</code>, usually named <code>tm.ipc</code> as evidenced in prefix <code>PRIVATE_CONFIG=tm.ipc</code>. Your node is now able to send and receive private transactions, advertised public node key will be in the <code>new-node-1.pub</code> file. Tessera offers a lot of configuration flexibility, please refer <a href="../../Privacy/Tessera/Configuration/Configuration%20Overview">Configuration</a> section under Tessera for complete and up to date configuration options.</p> <p>Your node is now operational and you may attach to it with <code>geth attach new-node-1/geth.ipc</code> to send private transactions.</p> <div class="language- extra-class"><pre class="language-text"><code>$ vim private-contract.js
+... create simple private contract to send transaction from new-node-1 private for new-node-2's tessera public key created in step 4
+a = eth.accounts[0]
+web3.eth.defaultAccount = a;
+// abi and bytecode generated from simplestorage.sol:
+// &gt; solcjs --bin --abi simplestorage.sol
+var abi = [{&quot;constant&quot;:true,&quot;inputs&quot;:[],&quot;name&quot;:&quot;storedData&quot;,&quot;outputs&quot;:[{&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;payable&quot;:false,&quot;type&quot;:&quot;function&quot;},{&quot;constant&quot;:false,&quot;inputs&quot;:[{&quot;name&quot;:&quot;x&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;name&quot;:&quot;set&quot;,&quot;outputs&quot;:[],&quot;payable&quot;:false,&quot;type&quot;:&quot;function&quot;},{&quot;constant&quot;:true,&quot;inputs&quot;:[],&quot;name&quot;:&quot;get&quot;,&quot;outputs&quot;:[{&quot;name&quot;:&quot;retVal&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;payable&quot;:false,&quot;type&quot;:&quot;function&quot;},{&quot;inputs&quot;:[{&quot;name&quot;:&quot;initVal&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;payable&quot;:false,&quot;type&quot;:&quot;constructor&quot;}];
+var bytecode = &quot;0x6060604052341561000f57600080fd5b604051602080610149833981016040528080519060200190919050505b806000819055505b505b610104806100456000396000f30060606040526000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a1afcd914605157806360fe47b11460775780636d4ce63c146097575b600080fd5b3415605b57600080fd5b606160bd565b6040518082815260200191505060405180910390f35b3415608157600080fd5b6095600480803590602001909190505060c3565b005b341560a157600080fd5b60a760ce565b6040518082815260200191505060405180910390f35b60005481565b806000819055505b50565b6000805490505b905600a165627a7a72305820d5851baab720bba574474de3d09dbeaabc674a15f4dd93b974908476542c23f00029&quot;;
+var simpleContract = web3.eth.contract(abi);
+var simple = simpleContract.new(42, {from:web3.eth.accounts[0], data: bytecode, gas: 0x47b760, privateFor: [&quot;AeggpVlVsi+rxD6h9tcq/8qL/MsjyipUnkj1nvNPgTU=&quot;]}, function(e, contract) {
+	if (e) {
+		console.log(&quot;err creating contract&quot;, e);
+	} else {
+		if (!contract.address) {
+			console.log(&quot;Contract transaction send: TransactionHash: &quot; + contract.transactionHash + &quot; waiting to be mined...&quot;);
+		} else {
+			console.log(&quot;Contract mined! Address: &quot; + contract.address);
+			console.log(contract);
+		}
+	}
+});
+$
+$
+</code></pre></div><p>!!! note
+Account opened in geth by default are locked, so please unlock account first before sending transaction</p> <div class="language- extra-class"><pre class="language-text"><code>$
+$ geth attach new-node-1/geth.ipc
+&gt; eth.accounts
+[&quot;0x23214cd88f46865207fa1d2a69971a37cdbf526a&quot;]
+&gt; personal.unlockAccount(&quot;0x23214cd88f46865207fa1d2a69971a37cdbf526a&quot;);
+Unlock account 0x23214cd88f46865207fa1d2a69971a37cdbf526a
+Passphrase: 
+true
+&gt; loadScript(&quot;private-contract.js&quot;)
+Contract transaction send: TransactionHash: 0x7d3bf7612ef10c71f752e881648b7c8c4eee3223acab151ee0652447790836a6 waiting to be mined...
+true
+&gt; Contract mined! Address: 0xe975e1e11c5268b1efcbf39b7ee3cf7b8dc85fd7
+</code></pre></div><p>You have <strong>successfully</strong> sent a private transaction from node 1 to node 2 !!</p> <p>!!! note
+if you do not have an valid public key in the array in private-contract.js, you will see the following error when the script in loaded.</p> <div class="language- extra-class"><pre class="language-text"><code>&gt; loadScript(&quot;private-contract.js&quot;)
+err creating contract Error: Non-200 status code: &amp;{Status:400 Bad Request StatusCode:400 Proto:HTTP/1.1 ProtoMajor:1      ProtoMinor:1 Header:map[Date:[Mon, 17 Jun 2019 15:23:53 GMT] Content-Type:[text/plain] Content-Length:[73] Server:[Jetty(9.4.z-SNAPSHOT)]] Body:0xc01997a580 ContentLength:73 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc019788200 TLS:&lt;nil&gt;}
+</code></pre></div></li></ol> <h3 id="constellation"><a href="#constellation" aria-hidden="true" class="header-anchor">↳</a> Constellation</h3> <ol><li><p>Build Smilo and install <a href="https://github.com/smilofoundation/constellation/releases" target="_blank" rel="noopener noreferrer">Constellation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> as described in the <a href="../Installing">Installing</a> section. Ensure that PATH contains geth, bootnode, and constellation-node binaries</p></li> <li><p>Generate new keys with <code>constellation-node --generatekeys=new-node-1</code></p></li> <li><p>Start your constellation node and send it into background with <code>constellation-node --url=https://127.0.0.1:9001/ --port=9001 --workdir=. --socket=tm.ipc --publickeys=new-node-1.pub --privatekeys=new-node-1.key --othernodes=https://127.0.0.1:9001/ &gt;&gt; constellation.log 2&gt;&amp;1 &amp;</code></p></li> <li><p>Start your node and send it into background with <code>PRIVATE_CONFIG=tm.ipc nohup geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,Smilo,raft --emitcheckpoints --port 21000 2&gt;&gt;node.log &amp;</code></p> <p>!!! note
+Constellation IPC bridge will be over a file name defined in your configuration: in above step #3 see option <code>--socket=file-name.ipc</code>. Your node is now able to send and receive private transactions, advertised public node key will be in the <code>new-node-1.pub</code> file.</p> <p>Your node is now operational and you may attach to it with <code>geth attach new-node-1/geth.ipc</code>.</p></li></ol> <h2 id="enabling-permissioned-configuration"><a href="#enabling-permissioned-configuration" aria-hidden="true" class="header-anchor">↳</a> Enabling permissioned configuration</h2> <p>Smilo ships with a permissions system based on a custom whitelist. Detailed documentation is available in <a href="../../Security/Framework/Smilo%20Network%20Security/Nodes/Permissioning/Network%20Permissioning">Network Permissioning</a>.</p></div></main> <div class="sidebar" data-v-586e078c><nav class="nav-links"><ul class="nav-ul"><li class="nav-item"><a href="/" class="nav-link">Smilo</a></li><li class="nav-item"><a href="/beginners/" class="nav-link">Beginners</a></li><li class="nav-item"><a href="/use/" class="nav-link">Use</a></li><li class="nav-item"><a href="/learn/" class="nav-link">Learn</a></li><li class="nav-item"><a href="/developers/" class="nav-link">Developers</a></li> <div class="dropdown-wrapper nav-item"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Getting Started/Creating-A-Network-From-Scratch.html" class="nav-link">English</a></li><li class="dropdown-item"><!----> <a href="/ko/" class="nav-link">Korean</a></li></ul></div></ul></nav>  <!----> </div> <footer class="footer" data-v-ca550d00 data-v-586e078c><div class="credits" data-v-ca550d00>
+    Artwork by <a href="https://impermanence.co" target="_blank" data-v-ca550d00>Lili Feyerabend</a> feat. <a href="https://ilankatin.com" target="_blank" data-v-ca550d00>ilan katin</a>, <a href="https://linktr.ee/mattiacprodukt" target="_blank" data-v-ca550d00>Mattia Cuttini</a>, <a href="https://oficinastk.github.io" target="_blank" data-v-ca550d00>Oficinas TK</a>, <a href="https://xcopyart.com" target="_blank" data-v-ca550d00>XCOPY</a>.
+  </div> <ul data-v-ca550d00><li data-v-ca550d00><a href="https://github.com/smilofoundation" target="_blank" data-v-ca550d00>GitHub</a></li> <li data-v-ca550d00><a href="https://twitter.com/smiloplatform" target="_blank" data-v-ca550d00>Twitter</a></li> <li data-v-ca550d00><a href="https://blog.smilo.foundation/" data-v-ca550d00>Blog</a></li> <li data-v-ca550d00><a href="/privacy-policy/" data-v-ca550d00>Privacy Policy</a></li> <li data-v-ca550d00><a href="/terms-of-use/" data-v-ca550d00>Terms of Use</a></li> <li data-v-ca550d00><a href="/cookie-policy/" data-v-ca550d00>Cookie Policy</a></li> <li data-v-ca550d00><a href="mailto:info@smilo.foundation" data-v-ca550d00>Contact</a></li></ul></footer> <a href="https://hackernoon.com/rethinking-the-identity-of-ethereumorg-l718w347l" target="_blank" data-v-586e078c><button class="announcement" data-v-586e078c>
+      Read about the new artwork! <span class="accent" data-v-586e078c>→  More</span></button></a></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1c5a03b7.js" defer></script><script src="/assets/js/3.030594d3.js" defer></script><script src="/assets/js/26.40635db2.js" defer></script>
+  </body>
+</html>
